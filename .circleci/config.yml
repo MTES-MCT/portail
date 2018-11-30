@@ -36,9 +36,15 @@ jobs:
       - checkout
       - attach_workspace:
           at: src
+      - add_ssh_keys:
+          fingerprints:
+            - "96:42:b8:98:23:ad:5b:3a:97:db:ac:1c:33:5a:57:00"
       - run: |
           rm -rf docs
           mv src/docs .
+          git config credential.helper 'cache --timeout=120'
+          git config user.email "<circleci>"
+          git config user.name "CircleCi"
           git add .
           git commit -m "Update site from circleci"
           git push origin master

@@ -17,9 +17,10 @@ hugo server -s src/
 # Publish to Github pages
 
 ```bash
-rm -rf src/public
-git worktree add -B gh-pages public upstream/gh-pages
+rm -rf docs
 HUGO_ENV=production hugo -v -s src/
-cd src/public && git add --all && git commit -m "Publishing to gh-pages" && cd ..
-git push upstream gh-pages
+mv src/docs .
+git add .
+git commit -m "Update site"
+git push origin
 ```
