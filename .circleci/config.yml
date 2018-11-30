@@ -46,5 +46,5 @@ jobs:
           git config user.email "<circleci>"
           git config user.name "CircleCi"
           git add .
-          git commit -m "Update site from circleci"
+          git commit -m "Update site from circleci" -m "[ci skip]"
           git push origin master
