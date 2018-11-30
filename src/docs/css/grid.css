@@ -1,0 +1,50 @@
+/* Modifications communes */
+/* Supprimer la déco des liens */
+
+.card a {
+  text-decoration: none;
+}
+
+/* --- */
+/* Page Community */
+
+.community .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 1em;
+  margin-top: 1em;
+  justify-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.alumni .card__cover img {
+    filter: sepia(100%);
+}
+
+.alumni .card__cover img:hover {
+    filter: sepia(0%)
+}
+
+/* ---*/
+/* Startups */
+
+/* Plus de stratups par lignes */
+
+.startups .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 1em;
+  margin-top: 1em;
+  justify-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+/* Hack pour une seule stratup par ligne */
+
+.startups .row .card {
+  margin: auto;
+}

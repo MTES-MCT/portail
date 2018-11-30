@@ -1,0 +1,22 @@
+{{ define "main" }}
+
+<div class="hero article__hero">
+    <div class="hero__container">
+      
+        <img src="{{ .Site.BaseURL }}/images/fabrique-numérique_AB.jpg" alt="Nous créons des services publics numériques" />
+      
+      <div class="article__container" style="text-align: center;">
+        <h1 class="article__title">{{ .Title }}</h1>
+      </div>
+    </div>
+  </div>
+
+  <section class="section section-white">
+    <div class="container">
+      <div class="column">
+        {{ .Content }}
+      </div>
+    </div>
+  </section>
+
+{{ end }}

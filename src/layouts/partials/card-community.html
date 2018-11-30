@@ -1,0 +1,23 @@
+<div class="card">
+    {{ if .Params.link }} <a href="{{ .Params.link }}" target="\_blank" rel="noopener">{{ end }}
+        <div class="card__cover">
+            {{ partial "avatar.html" . }}
+        </div>
+        <div class="card__content">
+            <h3>{{ .Params.fullname }}</h3>
+            <div class="card__meta">
+                {{ .Params.role }}
+            </div>
+            {{ .Content | markdownify }}
+        </div>
+        {{ if .Params.link }}
+    </a>{{ end }}
+    <div class="card__extra">
+        {{ range $startup := .Params.startups }}
+        <div class="label"><a href="/startup/{{ $startup }}">{{ $startup }}</a></div>
+        {{ end }}
+        {{ range $previous :=.Params.previously }}
+        <div class="label label--inactive"><a href="/startup/{{ $previous }}">{{ $previous }}</a></div>
+        {{ end }}
+    </div>
+</div>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on La fabrique numérique</title>
+    <link>http://MTES-MCT.github.io/portail/tags/</link>
+    <description>Recent content in Tags on La fabrique numérique</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-FR</language>
+    
+	<atom:link href="http://MTES-MCT.github.io/portail/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

@@ -1,0 +1,16 @@
+<div class="grid">
+    {{ range .Params.people }}
+    <div class="article__author panel">
+        <div class="article__author-info">
+            <div class="article__author-name">{{ .Params.Fullname }}</div>
+            <div class="article__author-role">{{ .Params.Role }}</div>
+        </div>
+        {{ partial "avatar.html" . }}
+        <div class="article__author-description">
+            {{ if .Params.Link }}<a href="{{ .Params.Link }}" target="_blank" rel="noopener">{{ end }}
+                {{ .Content | markdownify }}
+                {{ if .Params.Link }}</a>{{ end }}
+        </div>
+    </div>
+    {{ end }}
+</div>

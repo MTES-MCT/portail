@@ -1,0 +1,20 @@
+{{ define "main" }}
+<main id="main">
+<div class="page article" id="presentation">
+    {{ partial "hero-page.html" . }}
+</div>
+
+<section class="documentation">
+    <div class="main-pane">
+        <div class="markdown">
+            {{ .Content }}
+        </div>
+        <div class="grid">
+            {{ range (.Pages.ByParam "status")}}
+            {{ partial "card.html" . }}
+            {{ end }}
+        </div>
+    </div>
+</section>
+</main>
+{{ end }}

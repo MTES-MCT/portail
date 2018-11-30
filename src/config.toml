@@ -1,0 +1,5 @@
+baseURL = "http://MTES-MCT.github.io/portail"
+languageCode = "fr-FR"
+title = "La fabrique numérique"
+theme = "fabnum"
+publishDir = "docs"

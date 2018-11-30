@@ -1,0 +1,27 @@
+<div class="card">
+    <a href="{{ .Title | lower }}">
+        <div class="card__cover">
+            {{ partial "screenshot.html" . }}
+        </div>
+        <div class="card__content">
+            <h3>{{ .Title }}</h3>
+            <div class="card__meta">
+                {{ .Params.owner }}
+            </div>
+            <p>
+                {{ .Params.mission }}
+            </p>
+        </div>
+    </a>
+    <div class="card__extra">
+        <p>
+            <a href="{{ .Params.link }}">{{ .Params.link }}</a>
+            <br />
+            <a href="{{ .Params.repository }}">Code source ouvert</a>
+
+        </p>
+    </div>
+    <div class="card__extra">
+        <div class="label label--active">{{ .Params.contact }}</div>
+    </div>
+</div>

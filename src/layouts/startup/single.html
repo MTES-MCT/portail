@@ -1,0 +1,67 @@
+{{ define "main" }}
+<main id="main">
+<div class="page article">
+  {{ partial "hero-startup.html" . }}
+
+  <section class="section section-grey">
+    <div class="container">
+      {{ partial "screenshot.html" . }}
+    </div>
+  </section>
+
+  <div class="notification full-width">Le produit est en <em>{{ .Params.status }}</em>.</div>
+
+
+  <section class="section section-white">
+    <div class="container">
+      <div class="text-quote">
+        <ul>
+          <li>
+            Les statistiques d'usage
+            {{ if .Params.stats }}
+            <a href="{{ .Params.link }}/stats" title="Statistiques de {{ .Params.title }}">sont disponibles.</a>
+            {{ else }}
+            <em>ne sont pas encore disponibles.</em>
+            {{ end }}
+          </li>
+          <li>
+            Le code source
+            {{ if .Params.repository }}
+            <a href="{{ .Params.repository }}">est libre.</a>
+            {{ else }}
+            <em>n'est pas encore ouvert.</em>
+            {{ end }}
+          </li>
+          <li>
+            Le porteur administratif est {{ .Params.Owner }}.
+          </li>
+          <li>L'incubateur est <a href="{{ .Params.Owner }}" title="{{ .Params.Owner }}">{{ .Params.Owner }}</a>.</li>
+          <li>
+            {{ if .Params.contact }}
+            <a href="mailto:{{ .Params.contact }}?subject={{ .Params.title }}%20sur%20fabnum">Contacter
+              l’équipe</a>.
+            {{ else }}
+            <em><a href="mailto:{{ .Params.email }}?subject={{ .Params.title }}%20sur%20fabnum">Contacter
+                l'incubateur</a>.</em>
+            {{ end }}
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="richtext">
+        {{ .Content | markdownify }}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-grey">
+    <div class="container">
+      {{ partial "grid-authors.html" . }}
+    </div>
+  </section>
+
+</div>
+</main>
+{{ end }}
