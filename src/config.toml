@@ -1,4 +1,4 @@
-baseURL = "http://mtes-mct.github.io/portail"
+baseURL = "https://mtes-mct.github.io/portail"
 languageCode = "fr-FR"
 title = "La fabrique numérique"
 theme = "fabnum"
