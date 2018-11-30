@@ -1,7 +1,7 @@
 {{ if (fileExists (path.Join "static/images/startups/" (delimit (slice (.Params.title | lower) "jpg") "."))) }}
-<img class="screenshot" src="{{ .Site.BaseURL }}images/startups/{{ .Params.title | lower }}.jpg" title="Interface de {{ .Params.startup.title }}" alt="">
+<img class="screenshot" src="{{ .Site.BaseURL }}/images/startups/{{ .Params.title | lower }}.jpg" title="Interface de {{ .Params.startup.title }}" alt="">
 {{ else if (fileExists (path.Join "static/images/startups/" (delimit (slice (.Params.title | lower) "png") "."))) }}
-<img class="screenshot" src="{{ .Site.BaseURL }}images/startups/{{ .Params.title | lower }}.png" title="Interface de {{ .Params.startup.title }}" alt="">
+<img class="screenshot" src="{{ .Site.BaseURL }}/images/startups/{{ .Params.title | lower }}.png" title="Interface de {{ .Params.startup.title }}" alt="">
 {{ else }}
 No image
 {{ end }}
