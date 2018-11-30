@@ -34,7 +34,7 @@ jobs:
       - image: cibuilds/hugo
     steps:
       - attach_workspace:
-          at: .
+          at: src
       - run: |
           rm -rf docs
           mv src/docs .
