@@ -35,7 +35,7 @@
           <li>
             Le porteur administratif est {{ .Params.Owner }}.
           </li>
-          <li>L'incubateur est <a href="{{ .Params.Owner }}" title="{{ .Params.Owner }}">{{ .Params.Owner }}</a>.</li>
+          <li>L'incubateur est <a href="{{ .Site.BaseURL }}" title="{{ .Params.Owner }}">{{ .Params.Owner }}</a>.</li>
           <li>
             {{ if .Params.contact }}
             <a href="mailto:{{ .Params.contact }}?subject={{ .Params.title }}%20sur%20fabnum">Contacter
