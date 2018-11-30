@@ -33,6 +33,7 @@ jobs:
     docker:
       - image: cibuilds/hugo
     steps:
+      - checkout
       - attach_workspace:
           at: src
       - run: |
