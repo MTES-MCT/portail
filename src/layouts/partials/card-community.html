@@ -14,10 +14,10 @@
     </a>{{ end }}
     <div class="card__extra">
         {{ range $startup := .Params.startups }}
-        <div class="label"><a href="/startup/{{ $startup }}">{{ $startup }}</a></div>
+        <div class="label"><a href="{{ $.Site.BaseURL }}startup/{{ $startup }}">{{ $startup }}</a></div>
         {{ end }}
         {{ range $previous :=.Params.previously }}
-        <div class="label label--inactive"><a href="/startup/{{ $previous }}">{{ $previous }}</a></div>
+        <div class="label label--inactive"><a href="{{ $.Site.BaseURL }}startup/{{ $previous }}">{{ $previous }}</a></div>
         {{ end }}
     </div>
 </div>

@@ -29,18 +29,19 @@ jobs:
           command: HUGO_ENV=production hugo -v -s src/
       - run:
           name: "Test Website"
-          command: htmlproofer src/public --allow-hash-href --check-html --empty-alt-ignore --disable-external
+          command: htmlproofer src/docs --allow-hash-href --check-html --empty-alt-ignore --disable-external
       - persist_to_workspace:
-          root: src
+          root: .
           paths:
-            - public
+            - docs
 
   deploy:
     docker:
       - image: cibuilds/hugo
     steps:
       - attach_workspace:
-          at: src
+          at: .
       - run: |
-          cd public && git add --all && git commit -m "Publishing to gh-pages (publish.sh)" && cd ..
-          git push upstream gh-pages
+          git add .
+          git commit -m "Update site from circleci"
+          git push origin master
