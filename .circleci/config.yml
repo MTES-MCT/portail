@@ -3,12 +3,6 @@ workflows:
   main:
     jobs:
       - build
-      # - deploy-staging:
-      #    requires:
-      #      - build
-      #    filters:
-      #      branches:
-      #        ignore: master
       - deploy-production:
           requires:
             - build
@@ -31,7 +25,7 @@ jobs:
           name: "Test Website"
           command: htmlproofer src/docs --allow-hash-href --check-html --empty-alt-ignore --disable-external
       - persist_to_workspace:
-          root: .
+          root: src
           paths:
             - docs
 
@@ -42,6 +36,8 @@ jobs:
       - attach_workspace:
           at: .
       - run: |
+          rm -rf docs
+          mv src/docs .
           git add .
           git commit -m "Update site from circleci"
           git push origin master

@@ -1,1 +1,5 @@
+{{ if .Params.avatar }}
 <img class="screenshot" src="{{ .Params.avatar }}" title="{{ .Params.Fullname }}" alt="">
+{{ else }}
+<img class="screenshot" src="{{ .Site.BaseURL }}/images/fabnum.png" title="{{ .Params.Fullname }}" alt="">
+{{ end }}
