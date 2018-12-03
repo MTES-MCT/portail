@@ -61,7 +61,7 @@ jobs:
               mv _index.md.bak _index.md
       - run:
           name: Remove people images files in repo
-          command: find src/static/images/authors -type f -name "*.(jpg|png)" -delete
+          command: find src/static/images/people -type f -name "*.(jpg|png)" -delete
       - run:
           name: Copy authors from betagouv to people in repo
           command: |
