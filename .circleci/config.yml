@@ -37,6 +37,7 @@ jobs:
   deploy:
     executor: hugo
     steps:
+      - checkout
       - attach_workspace:
           at: src
       - add_ssh_keys:
