@@ -60,10 +60,23 @@ jobs:
           command: |
               while read -r line; do
                 cp "$line" src/content/people
-              done < $LIST_RESULTS/startups.txt
+              done < $LIST_RESULTS/authors.txt
       - run:
           name: Deploy to repo
-          command: bash deploy_to_repo.sh
+          command: |
+            git config credential.helper 'cache --timeout=120'
+            git config user.email "<circleci>"
+            git config user.name "CircleCi"
+            status=$(git status -s)
+            empty=''
+            if [ "$status" = "$empty" ]; then 
+                echo "Pas de modifications dans src. Pas de deploy."
+                exit 0
+            else
+                git add .
+                git commit -m "Update site from circleci"
+                git push origin master
+            fi
       - store_artifacts:
           path: /tmp/list-results
           destination: raw-list-results
