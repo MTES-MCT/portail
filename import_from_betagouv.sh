@@ -7,9 +7,7 @@ function remove_old_files {
    pwd
    ls
    mv _index.md _index.md.bak
-   if [ find . -type f -name '*.md' ]; then
-      rm *.md
-   fi
+   find . -type f -name '*.md' | xargs rm
    mv _index.md.bak _index.md
 }
 
