@@ -21,10 +21,10 @@ jobs:
       - run: git clone https://github.com/betagouv/beta.gouv.fr.git $BETAGOUV
       - run: 
           name: List mtes startups from beta.gouv.fr
-          command: find $BETAGOUV/content/_startups -type f -iname '*.md' -print0 | xargs -I {} -0 grep -l 'mtes' "{}" > $LIST_RESULTS/startups.txt
+          command: find $BETAGOUV/content/_startups -type f -iname '*.md' | xargs grep -l 'mtes' "{}" > $LIST_RESULTS/startups.txt
       - run: 
           name: List MTES authors from beta.gouv.fr
-          command: find $BETAGOUV/content/_authors -type f -iname '*.md' -print0 | xargs -I {} -0 grep -l 'MTES' "{}" > $LIST_RESULTS/authors.txt
+          command: find $BETAGOUV/content/_authors -type f -iname '*.md' | xargs grep -l 'MTES' "{}" > $LIST_RESULTS/authors.txt
       - run: 
           name: List authors by mtes startup
           command: |
