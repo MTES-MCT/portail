@@ -11,11 +11,17 @@ pwd
 git clone https://github.com/betagouv/beta.gouv.fr.git
 cd beta.gouv.fr/content/_startups
 pwd
+ls
 grep -rl "mtes" > startups.txt
 cp startups.txt ../_authors
 cd ../_authors
+echo "Import des startups:\n"
+echo < startups.txt
 pwd
+ls
 grep -rl "MTES" >> authors.txt
+echo "Import des auteurs:\n"
+echo < authors.txt
 
 function get_authors {
  IFS='.'
@@ -27,23 +33,26 @@ function get_authors {
      i=$(( i + 1 ))
     fi
  done
+ echo "Import des auteurs:\n"
+ echo < authors.txt
  IFS=' '
 }
 
 function remove_old_files {
-   mv _index.md _index.md.bak
-   rm *.md
-   mv _index.md.bak _index.md
+ pwd
+ ls
+ mv _index.md _index.md.bak
+ rm *.md
+ mv _index.md.bak _index.md
 }
 
 cd "$startup_dir"
-pwd
 remove_old_files
 
 cd "$startups_dir"
 
 echo "Import des startups:\n"
-cat startups.txt | echo
+echo < startups.txt
 
 while read -r line; do
  pwd
@@ -58,15 +67,15 @@ while read -r line; do
 done < startups.txt
 
 cd "$people_dir"
-pwd
 remove_old_files
 
 cd "$authors_dir"
 
 echo "Import des auteurs:\n"
-cat authors.txt | echo
+echo < authors.txt
 
 while read -r line; do
  pwd
+ ls
  cp "$line" "$people_dir"
 done < authors.txt
