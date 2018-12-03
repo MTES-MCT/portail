@@ -18,8 +18,7 @@ jobs:
           command: bash src/import_from_betagouv.sh
       - persist_to_workspace:
           root: '~'
-          paths:
-            - project/betagouv    
+          paths:  
             - project/portail      
   build:
     executor: hugo
@@ -36,12 +35,12 @@ jobs:
       - persist_to_workspace:
           root: '~'
           paths:
-            - project/portail/src/docs
+            - project/portail
   deploy:
     executor: hugo
     steps:
       - attach_workspace:
-          at: '~/project/portail/src'
+          at: '~/project/portail'
       - add_ssh_keys:
           fingerprints:
             - "96:42:b8:98:23:ad:5b:3a:97:db:ac:1c:33:5a:57:00"
