@@ -15,7 +15,7 @@ jobs:
           at: '~/project/portail'
       - run: 
           name: "Import startups and people data from beta.gouv.fr"
-          command: ./import_from_betagouv.sh
+          command: bash src/import_from_betagouv.sh
       - persist_to_workspace:
           root: '~'
           paths:
