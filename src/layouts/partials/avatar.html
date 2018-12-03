@@ -1,5 +1,7 @@
-{{ if .Params.avatar && if (fileExists .Params.avatar) }}
+{{ if .Params.avatar }}
+{{ if (fileExists .Params.avatar) }}
 <img class="screenshot" src="{{ .Params.avatar }}" title="{{ .Params.Fullname }}" alt="">
+{{ end }}
 {{ else if (fileExists (path.Join "static/images/people/" (delimit (slice (.File.TranslationBaseName) "jpg") "."))) }}
 <img class="screenshot" src="{{ .Site.BaseURL }}/images/people/{{ .File.TranslationBaseName }}.jpg" title="{{ .Params.Fullname }}" alt="">
 {{ else if (fileExists (path.Join "static/images/people/" (delimit (slice (.File.TranslationBaseName) "png") "."))) }}
