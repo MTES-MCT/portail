@@ -30,16 +30,10 @@ jobs:
           command: |
             while read -r line; do
               startup_file="$line"
-              IFS='.'
-              read -ra ADDR \<\<\< "$startup_file"
-              i=0
-              for startup in "${ADDR[@]}"; do
-                if [ "$i" == 0 ]; then
-                  find $BETAGOUV/content/_authors -type f -name *.md | xargs grep -rl "$startup" >>  $LIST_RESULTS/authors.txt
-                  i=$(( i + 1 ))
-                fi
-              done
-              IFS=' ' 
+              echo "$startup_file"
+              filename=$(basename "$startup_file")
+              startup="${filename%.*}"
+              find $BETAGOUV/content/_authors -type f -name "*.md" -exec grep -l "$startup" {} \; >>  $LIST_RESULTS/authors.txt
             done < $LIST_RESULTS/startups.txt
       - run:
           name: Remove startup md files in repo
