@@ -15,14 +15,14 @@ jobs:
     steps:
       - checkout
       - run: mkdir -p $LIST_RESULTS
-      - run: mkdir -p $BETAGOUV && cd $BETAGOUV
-      - run: git clone https://github.com/betagouv/beta.gouv.fr.git
+      - run: mkdir -p $BETAGOUV
+      - run: git clone https://github.com/betagouv/beta.gouv.fr.git $BETAGOUV
       - run: 
           name: List mtes startups from beta.gouv.fr
-          command: cd beta.gouv.fr/content/_startups && grep -rl "mtes" > $LIST_RESULTS/startups.txt
+          command: cd $BETAGOUV/beta.gouv.fr/content/_startups && grep -rl "mtes" > $LIST_RESULTS/startups.txt
       - run: 
           name: List MTES authors from beta.gouv.fr
-          command: cd beta.gouv.fr/content/_authors && grep -rl "MTES" > $LIST_RESULTS/authors.txt
+          command: cd $BETAGOUV/beta.gouv.fr/content/_authors && grep -rl "MTES" > $LIST_RESULTS/authors.txt
       - run: 
           name: List authors by mtes startup
           command: |
