@@ -11,6 +11,7 @@ jobs:
     executor: hugo
     working_directory: /tmp
     steps:
+      - checkout
       - run: 
           name: "Import startups and people data from beta.gouv.fr"
           command: bash export_from_betagouv.sh
