@@ -9,7 +9,7 @@ pwd
 git clone https://github.com/betagouv/beta.gouv.fr.git
 cd beta.gouv.fr/content/_startups
 grep -rl "mtes" | tee -a "$ROOT/artifacts/startups.txt"
-cat "$ROOT/artifacts/startups.txt" | xargs echo
+cat "$ROOT/artifacts/startups.txt" | wc -l
 cd ../_authors
 grep -rl "MTES" | tee -a "$ROOT/artifacts/authors.txt"
 
@@ -34,7 +34,7 @@ while read -r line; do
  startup_file="$line"
  get_authors 
 done < "$ROOT/artifacts/startups.txt"
-cat "$ROOT/artifacts/authors.txt" | xargs echo
+cat "$ROOT/artifacts/authors.txt" | wc -l
 
 
 while read -r line; do
