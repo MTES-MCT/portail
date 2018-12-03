@@ -3,7 +3,7 @@ version: 2.1
 executors:
   hugo:
     docker:
-      - image: circleci/hugo
+      - image: cibuilds/hugo
     working_directory: ~/project/portail
 
 jobs:
