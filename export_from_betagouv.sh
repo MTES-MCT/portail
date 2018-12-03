@@ -1,5 +1,5 @@
 #!/bin/bash
-
+ROOT='/root/project/portail'
 mkdir -p artifacts
 mkdir -p artifacts/startups
 mkdir -p artifacts/authors
@@ -9,9 +9,11 @@ pwd
 git clone https://github.com/betagouv/beta.gouv.fr.git
 cd beta.gouv.fr/content/_startups
 pwd
-grep -rl "mtes" > "$CIRCLE_WORKING_DIRECTORY/artifacts/startups.txt"
+grep -rl "mtes" > "$ROOT/artifacts/startups.txt"
+ls
 cd ../_authors
-grep -rl "MTES" > "$CIRCLE_WORKING_DIRECTORY/artifacts/authors.txt"
+grep -rl "MTES" > "$ROOT/artifacts/authors.txt"
+ls
 
 function get_authors {
  IFS='.'
@@ -21,7 +23,7 @@ function get_authors {
  for startup in "${ADDR[@]}"; do
     if [ "$i" == 0 ]; then
      echo "startup: $startup"
-     find . -type f -name '*.md' | xargs grep -rl "$startup" >> "$CIRCLE_WORKING_DIRECTORY/artifacts/authors.txt"
+     find . -type f -name '*.md' | xargs grep -rl "$startup" >> "$ROOT/artifacts/authors.txt"
      i=$(( i + 1 ))
     fi
  done
@@ -33,15 +35,15 @@ while read -r line; do
  echo "$line"
  startup_file="$line"
  get_authors 
-done < "$CIRCLE_WORKING_DIRECTORY/artifacts/startups.txt"
+done < "$ROOT/artifacts/startups.txt"
 
 
 while read -r line; do
- cp "$line" "$CIRCLE_WORKING_DIRECTORY/artifacts/authors"
-done < "$CIRCLE_WORKING_DIRECTORY/artifacts/authors.txt"
+ cp "$line" "$ROOT/artifacts/authors"
+done < "$ROOT/artifacts/authors.txt"
 
 cd ../_startups
 pwd
 while read -r line; do
- cp "$line" "$CIRCLE_WORKING_DIRECTORY/artifacts/startups"
-done < "$CIRCLE_WORKING_DIRECTORY/artifacts/startups.txt"
+ cp "$line" "$ROOT/artifacts/startups"
+done < "$ROOT/artifacts/startups.txt"
