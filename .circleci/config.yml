@@ -28,7 +28,11 @@ jobs:
           command: HUGO_ENV=production hugo -v -s src/
       - run:
           name: "Test Website"
-          command: htmlproofer src/docs --allow-hash-href --check-html --empty-alt-ignore --disable-external    
+          command: htmlproofer src/docs --allow-hash-href --check-html --empty-alt-ignore --disable-external  
+      - persist_to_workspace:
+          root: '~'
+          paths:  
+            - project/portail      
   deploy:
     executor: hugo
     steps:
