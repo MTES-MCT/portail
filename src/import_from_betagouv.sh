@@ -1,16 +1,15 @@
 #!/bin/bash
+startup_dir='../../../../portail/src/content/startup'
+startups_dir='../../../../betagouv/beta.gouv.fr/content/_startups'
+people_dir='../../../../portail/src/content/people'
+authors_dir='../../../../betagouv/beta.gouv.fr/content/_authors'
 pwd
 cd ../../project
 mkdir -p betagouv
 cd betagouv
 pwd
 git clone https://github.com/betagouv/beta.gouv.fr.git
-betagouv_dir='~/project/betagouv/beta.gouv.fr'
-startups_dir='~/project/betagouv/beta.gouv.fr/content/_startups'
-authors_dir='~/project/betagouv/beta.gouv.fr/content/_authors'
-startup_dir='~/project/portail/src/content/startup'
-people_dir='~/project/portail/src/content/people'
-cd "$startups_dir"
+cd beta.gouv.fr/content/_startups
 pwd
 grep -rl "mtes" > startups.txt
 cp startups.txt ../_authors
@@ -45,7 +44,7 @@ cd "$startups_dir"
 
 while read -r line; do
  pwd
- cp ../_startups/"$line" "$startup_dir"
+ cp "$line" "$startup_dir"
  startup_file="$line"
  get_authors 
 done < startups.txt
