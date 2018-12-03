@@ -42,6 +42,9 @@ remove_old_files
 
 cd "$startups_dir"
 
+echo "Import des startups:\n"
+echo < startups.txt
+
 while read -r line; do
  pwd
  cp "$line" "$startup_dir"
@@ -59,6 +62,9 @@ pwd
 remove_old_files
 
 cd "$authors_dir"
+
+echo "Import des auteurs:\n"
+echo < authors.txt
 
 while read -r line; do
  pwd
