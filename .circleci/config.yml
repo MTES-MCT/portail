@@ -71,7 +71,7 @@ jobs:
                 cp "$line" src/content/people
                 filename=$(basename "$line")
                 author="${filename%.*}"
-                cp $BETAGOUV/img/authors -type f -name "$author.(jpg|png)" -exec cp {} src/static/images/people \;
+                find $BETAGOUV/img/authors -type f -name "$author.(jpg|png)" -exec cp {} src/static/images/people \;
               done < $LIST_RESULTS/authors.txt
       - run:
           name: Deploy to repo
