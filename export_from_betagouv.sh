@@ -8,12 +8,10 @@ cd betagouv
 pwd
 git clone https://github.com/betagouv/beta.gouv.fr.git
 cd beta.gouv.fr/content/_startups
-pwd
 grep -rl "mtes" | tee -a "$ROOT/artifacts/startups.txt"
-ls
+tee "$ROOT/artifacts/startups.txt" | xargs echo
 cd ../_authors
 grep -rl "MTES" | tee -a "$ROOT/artifacts/authors.txt"
-ls
 
 function get_authors {
  IFS='.'
@@ -36,14 +34,15 @@ while read -r line; do
  startup_file="$line"
  get_authors 
 done < "$ROOT/artifacts/startups.txt"
+tee "$ROOT/artifacts/authors.txt" | xargs echo
 
 
 while read -r line; do
- cp "$line" "$ROOT/artifacts/authors"
+ cp "$line" "$ROOT/src/content/people/authors"
 done < "$ROOT/artifacts/authors.txt"
 
 cd ../_startups
 pwd
 while read -r line; do
- cp "$line" "$ROOT/artifacts/startups"
+ cp "$line" "$ROOT/src/content/startup"
 done < "$ROOT/artifacts/startups.txt"

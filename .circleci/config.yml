@@ -21,37 +21,23 @@ jobs:
           paths:
             - startups
             - authors
+      - deploy
   build:
     executor: hugo
     steps:
       - checkout
       - attach_workspace:
           at: artifacts
-      - run: 
-          name: "Import startups and people data from beta.gouv.fr"
-          command: bash import_from_betagouv.sh
       - run:
           name: "Build Website With Hugo"
           command: HUGO_ENV=production hugo -v -s src/
       - run:
           name: "Test Website"
           command: htmlproofer src/docs --allow-hash-href --check-html --empty-alt-ignore --disable-external  
-      - persist_to_workspace:
-          root: src
-          paths:  
-            - docs     
-  deploy:
-    executor: hugo
-    steps:
-      - checkout
-      - attach_workspace:
-          at: src
-      - add_ssh_keys:
-          fingerprints:
-            - "96:42:b8:98:23:ad:5b:3a:97:db:ac:1c:33:5a:57:00"
-      - run:
-          name: "Deploy to repo"
-          command: bash deploy_to_repo.sh
+      - deploy:
+          command: |
+            rm -rf docs
+            mv src/docs .
 workflows:
   version: 2
   weekly-import:
@@ -72,9 +58,6 @@ workflows:
       - build:
           requires:
             - import
-      - deploy:
-          requires:
-            - build
           filters:
             branches:
               only: master
