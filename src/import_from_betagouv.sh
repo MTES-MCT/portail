@@ -13,8 +13,12 @@ cd beta.gouv.fr/content/_startups
 pwd
 ls
 grep -rl "mtes" > startups.txt
+pwd
+ls
 cp startups.txt ../_authors
 cd ../_authors
+pwd
+ls
 echo "Import des startups:"
 cat startups.txt | xargs echo
 grep -rl "MTES" >> authors.txt
@@ -27,7 +31,7 @@ function get_authors {
  i=0
  for startup in "${ADDR[@]}"; do
     if [ "$i" == 0 ]; then
-     echo "$startup"
+     echo "startup: $startup"
      find . -type f -name '*.md' | xargs grep -rl "$startup" >> authors.txt
      i=$(( i + 1 ))
     fi
@@ -38,16 +42,19 @@ function get_authors {
 }
 
 function remove_old_files {
- mv _index.md _index.md.bak
- rm *.md
- mv _index.md.bak _index.md
+   pwd
+   ls
+   mv _index.md _index.md.bak
+   rm *.md
+   mv _index.md.bak _index.md
 }
 
 cd "$startup_dir"
 remove_old_files
 
 cd "$startups_dir"
-
+pwd
+ls
 echo "Import des startups:"
 cat startups.txt | xargs echo
 
