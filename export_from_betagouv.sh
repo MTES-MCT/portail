@@ -9,10 +9,10 @@ pwd
 git clone https://github.com/betagouv/beta.gouv.fr.git
 cd beta.gouv.fr/content/_startups
 pwd
-grep -rl "mtes" | tee "$ROOT/artifacts/startups.txt"
+grep -rl "mtes" | tee -a "$ROOT/artifacts/startups.txt"
 ls
 cd ../_authors
-grep -rl "MTES" | tee "$ROOT/artifacts/authors.txt"
+grep -rl "MTES" | tee -a "$ROOT/artifacts/authors.txt"
 ls
 
 function get_authors {
@@ -23,7 +23,7 @@ function get_authors {
  for startup in "${ADDR[@]}"; do
     if [ "$i" == 0 ]; then
      echo "startup: $startup"
-     find . -type f -name '*.md' | xargs grep -rl "$startup" | tee "$ROOT/artifacts/authors.txt"
+     find . -type f -name '*.md' | xargs grep -rl "$startup" | tee -a "$ROOT/artifacts/authors.txt"
      i=$(( i + 1 ))
     fi
  done
