@@ -21,25 +21,19 @@ jobs:
   build:
     executor: hugo
     steps:
-      - checkout
       - attach_workspace:
-          at: '~/project/portail'
+          at: '~'
       - run:
           name: "Build Website With Hugo"
           command: HUGO_ENV=production hugo -v -s src/
       - run:
           name: "Test Website"
-          command: htmlproofer src/docs --allow-hash-href --check-html --empty-alt-ignore --disable-external
-      - persist_to_workspace:
-          root: src
-          paths:
-            - docs
+          command: htmlproofer src/docs --allow-hash-href --check-html --empty-alt-ignore --disable-external    
   deploy:
     executor: hugo
     steps:
-      - checkout
       - attach_workspace:
-          at: src
+          at: '~'
       - add_ssh_keys:
           fingerprints:
             - "96:42:b8:98:23:ad:5b:3a:97:db:ac:1c:33:5a:57:00"
