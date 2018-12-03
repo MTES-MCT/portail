@@ -1,23 +1,32 @@
-workflows:
-  version: 2
-  main:
-    jobs:
-      - build
-      - deploy:
-          requires:
-            - build
-          filters:
-            branches:
-              only: master
+version: 2.1
 
-
-version: 2
-jobs:
-  build:
+executors:
+  hugo:
     docker:
-      - image: cibuilds/hugo
+      - image: circleci/hugo
+    working_directory: ~/project/portail
+
+jobs:
+  import:
+    executor: hugo
     steps:
       - checkout
+      - attach_workspace:
+          at: '~/project/portail'
+      - run: 
+          name: "Import startups and people data from beta.gouv.fr"
+          command: ./import_from_betagouv.sh
+      - persist_to_workspace:
+          root: '~'
+          paths:
+            - project/betagouv    
+            - project/portail      
+  build:
+    executor: hugo
+    steps:
+      - checkout
+      - attach_workspace:
+          at: '~/project/portail'
       - run:
           name: "Build Website With Hugo"
           command: HUGO_ENV=production hugo -v -s src/
@@ -25,17 +34,14 @@ jobs:
           name: "Test Website"
           command: htmlproofer src/docs --allow-hash-href --check-html --empty-alt-ignore --disable-external
       - persist_to_workspace:
-          root: src
+          root: '~'
           paths:
-            - docs
-
+            - project/portail/src/docs
   deploy:
-    docker:
-      - image: cibuilds/hugo
+    executor: hugo
     steps:
-      - checkout
       - attach_workspace:
-          at: src
+          at: '~/project/portail/src'
       - add_ssh_keys:
           fingerprints:
             - "96:42:b8:98:23:ad:5b:3a:97:db:ac:1c:33:5a:57:00"
@@ -55,3 +61,25 @@ jobs:
             git commit -m "Update site from circleci" -m "[ci skip]"
             git push origin master
           fi
+workflows:
+  weekly-import:
+    triggers:
+      - schedule: 
+        cron: "0 0 * * 0" # every sunday
+    jobs:
+      - import:
+          filters:
+            branches:
+              only: master
+  main:
+    jobs:
+      - import
+      - build:
+          requires:
+            - import
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only: master

@@ -1,14 +1,15 @@
 ---
 title: Locatio
 mission: Remettre la confiance au centre de la relation entre propriétaires et locataires
-owner: Ministère de la Cohésion des Territoires / Ministère de la Transition Ecologique et Solidaire
-status: construction
+owner: Ministère de la Cohésion des territoires / Ministère de la Transition écologique et solidaire
+incubator: mtes
+status: acceleration
 start: 2018-01-01
 end:
-link: http://locatio.beta.gouv.fr/home
-repository:
+link: https://locatio.beta.gouv.fr/?utm_source=BetaGouv
+repository: https://github.com/MTES-MCT/locatio
 stats: false
-contact: matthieu.heurtel@beta.gouv.fr
+contact: contact@locatio.beta.gouv.fr
 ---
 
 ## Une relation tendue
