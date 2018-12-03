@@ -9,37 +9,82 @@ executors:
 jobs:
   import:
     executor: hugo
+    environment: 
+      LIST_RESULTS: /tmp/list-results
+      BETAGOUV: /tmp/betagouv
     steps:
       - checkout
+      - run: mkdir -p $LIST_RESULTS
+      - run: mkdir -p $BETAGOUV && cd $BETAGOUV
+      - run: git clone https://github.com/betagouv/beta.gouv.fr.git
       - run: 
-          name: "Import startups and people data from beta.gouv.fr"
-          command: bash export_from_betagouv.sh
-      - store_artifacts:
-          path: artifacts
-      - persist_to_workspace:
-          root: artifacts
-          paths:
-            - startups
-            - authors
-      - deploy:
+          name: List mtes startups from beta.gouv.fr
+          command: cd beta.gouv.fr/content/_startups && grep -rl "mtes" > $LIST_RESULTS/startups.txt
+      - run: 
+          name: List MTES authors from beta.gouv.fr
+          command: cd beta.gouv.fr/content/_authors && grep -rl "MTES" > $LIST_RESULTS/authors.txt
+      - run: 
+          name: List authors by mtes startup
           command: |
-            echo "Deploy import from beta.gouv.fr"
+            while read -r line; do
+              echo "$line"
+              startup_file="$line"
+              IFS='.'
+              read -ra ADDR <<< "$startup_file"
+              i=0
+              for startup in "${ADDR[@]}"; do
+                if [ "$i" == 0 ]; then
+                  find . -type f -name '*.md' | xargs grep -rl "$startup" >>  $LIST_RESULTS/authors.txt
+                  i=$(( i + 1 ))
+                fi
+              done
+              IFS=' ' 
+            done < $LIST_RESULTS/startups.txt
+      - run:
+          name: Remove startup md files in repo
+          command: |
+              cd src/content/startup
+              mv _index.md _index.md.bak
+              find . -type f -name '*.md' -delete
+              mv _index.md.bak _index.md
+      - run:
+          name: Copy startups from betagouv to startup in repo
+          command: |
+              while read -r line; do
+                cp "$line" src/content/startup"
+              done < $LIST_RESULTS/startups.txt
+      - run:
+          name: Remove people md files in repo
+          command: |
+              cd src/content/people
+              mv _index.md _index.md.bak
+              find . -type f -name '*.md' -delete
+              mv _index.md.bak _index.md
+      - run:
+          name: Copy authors from betagouv to people in repo
+          command: |
+              while read -r line; do
+                cp "$line" src/content/people"
+              done < $LIST_RESULTS/startups.txt
+      - run:
+          name: Deploy to repo
+          command: bash deploy_to_repo.sh
+      - store_artifacts:
+          path: /tmp/list-results
+          destination: raw-list-results
   build:
     executor: hugo
     steps:
       - checkout
-      - attach_workspace:
-          at: artifacts
       - run:
-          name: "Build Website With Hugo"
+          name: Build Website With Hugo
           command: HUGO_ENV=production hugo -v -s src/
       - run:
-          name: "Test Website"
+          name: Test Website
           command: htmlproofer src/docs --allow-hash-href --check-html --empty-alt-ignore --disable-external  
-      - deploy:
-          command: |
-            rm -rf docs
-            mv src/docs .
+      - run:
+          name: Deploy to repo
+          command: bash deploy_to_repo.sh
 workflows:
   version: 2
   weekly-import:

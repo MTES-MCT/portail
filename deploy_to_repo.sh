@@ -1,6 +1,4 @@
 #!/bin/bash
-pwd
-ls
 rm -rf docs
 mv src/docs .
 git config credential.helper 'cache --timeout=120'
