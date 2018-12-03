@@ -9,16 +9,15 @@ executors:
 jobs:
   import:
     executor: hugo
-    working_directory: /tmp
     steps:
       - checkout
       - run: 
           name: "Import startups and people data from beta.gouv.fr"
           command: bash export_from_betagouv.sh
       - store_artifacts:
-          path: /tmp/artifacts
+          path: artifacts
       - persist_to_workspace:
-          root: /tmp/artifacts
+          root: artifacts
           paths:
             - startups
             - authors
@@ -27,7 +26,7 @@ jobs:
     steps:
       - checkout
       - attach_workspace:
-        at: /tmp/artifacts
+        at: artifacts
       - run: 
           name: "Import startups and people data from beta.gouv.fr"
           command: bash import_from_betagouv.sh

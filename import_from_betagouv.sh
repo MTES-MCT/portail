@@ -1,7 +1,7 @@
 #!/bin/bash
 
-startup_dir='/root/project/portail/src/content/startup'
-people_dir='/root/project/portail/src/content/people'
+startup_dir="$CIRCLE_WORKING_DIRECTORY/src/content/startup"
+people_dir="$CIRCLE_WORKING_DIRECTORY/src/content/people"
 
 function remove_old_files {
    pwd
@@ -14,9 +14,9 @@ function remove_old_files {
 cd "$startup_dir"
 remove_old_files
 
-cp /tmp/artifacts/startups/. "$startup_dir"
+cp "$CIRCLE_WORKING_DIRECTORY/artifacts/startups/." "$startup_dir"
 
 cd "$people_dir"
 remove_old_files
 
-cp /tmp/artifacts/authors/. "$people_dir"
+cp "$CIRCLE_WORKING_DIRECTORY/artifacts/authors/." "$people_dir"
