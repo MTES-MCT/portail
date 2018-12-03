@@ -14,9 +14,12 @@ jobs:
       BETAGOUV: /tmp/betagouv
     steps:
       - checkout
+      - attach-workspace:
+          at: ~/project/portail
       - run: mkdir -p $LIST_RESULTS
       - run: mkdir -p $BETAGOUV
       - run: git clone https://github.com/betagouv/beta.gouv.fr.git $BETAGOUV
+      - run: ls $BETAGOUV
       - run: 
           name: List mtes startups from beta.gouv.fr
           command: cd $BETAGOUV/beta.gouv.fr/content/_startups && grep -rl "mtes" > $LIST_RESULTS/startups.txt
