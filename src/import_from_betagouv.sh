@@ -1,13 +1,15 @@
 #!/bin/bash
 pwd
-cd ../project
+cd ../../project
 mkdir -p betagouv
 cd betagouv
 git clone https://github.com/betagouv/beta.gouv.fr.git
-betagouv_dir='../../../betagouv/beta.gouv.fr'
-startup_dir='../../../../fabnum/portail/src/content/startup'
-people_dir='../../../../fabnum/portail/src/content/people'
-cd "$betagouv_dir"/content/_startups
+betagouv_dir='~/project/betagouv/beta.gouv.fr'
+startups_dir='~/project/betagouv/beta.gouv.fr/content/_startups'
+authors_dir='~/project/betagouv/beta.gouv.fr/content/_authors'
+startup_dir='~/project/portail/src/content/startup'
+people_dir='~/project/portail/src/content/people'
+cd "$startups_dir"
 pwd
 grep -rl "mtes" > startups.txt
 cp startups.txt ../_authors
@@ -38,7 +40,7 @@ cd "$startup_dir"
 pwd
 remove_old_files
 
-cd ../../../../../betagouv/beta.gouv.fr/content/_startups
+cd "$startups_dir"
 
 while read -r line; do
  pwd
@@ -56,7 +58,7 @@ cd "$people_dir"
 pwd
 remove_old_files
 
-cd ../../../../../betagouv/beta.gouv.fr/content/_authors
+cd "$authors_dir"
 
 while read -r line; do
  pwd
