@@ -1,0 +1,12 @@
+/* Suppresion de l'effet shadow de l'image du hero */
+
+.article__hero img {
+    filter:none;
+}
+
+/* Centrer les accroches */
+
+.centered {
+  text-align: center;
+  justify-content: space-around;
+}
