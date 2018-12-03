@@ -21,10 +21,10 @@ jobs:
       - run: git clone https://github.com/betagouv/beta.gouv.fr.git $BETAGOUV
       - run: 
           name: List mtes startups from beta.gouv.fr
-          command: cd $BETAGOUV/content/_startups && grep -rl "mtes" > $LIST_RESULTS/startups.txt
+          command: find $BETAGOUV/content/_startups -type f -name *.md | grep -rl "mtes" > $LIST_RESULTS/startups.txt
       - run: 
           name: List MTES authors from beta.gouv.fr
-          command: cd $BETAGOUV/content/_authors && grep -rl "MTES" > $LIST_RESULTS/authors.txt
+          command: find $BETAGOUV/content/_authors -type f -name *.md | grep -rl "MTES" > $LIST_RESULTS/authors.txt
       - run: 
           name: List authors by mtes startup
           command: |
@@ -35,7 +35,7 @@ jobs:
               i=0
               for startup in "${ADDR[@]}"; do
                 if [ "$i" == 0 ]; then
-                  find . -type f -name *.md | xargs grep -rl "$startup" >>  $LIST_RESULTS/authors.txt
+                  find $BETAGOUV/content/_authors -type f -name *.md | xargs grep -rl "$startup" >>  $LIST_RESULTS/authors.txt
                   i=$(( i + 1 ))
                 fi
               done
