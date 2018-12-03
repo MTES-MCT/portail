@@ -67,6 +67,9 @@ workflows:
     triggers:
       - schedule: 
           cron: "0 0 * * 0" # every sunday
+          filters:
+            branches:
+              only: master
     jobs:
       - import:
           filters:
