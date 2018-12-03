@@ -11,8 +11,6 @@ jobs:
     executor: hugo
     steps:
       - checkout
-      - attach_workspace:
-          at: '~/project/portail'
       - run: 
           name: "Import startups and people data from beta.gouv.fr"
           command: bash src/import_from_betagouv.sh
@@ -25,7 +23,7 @@ jobs:
     steps:
       - checkout
       - attach_workspace:
-          at: '~/project/portail'
+          at: '~'
       - run:
           name: "Build Website With Hugo"
           command: HUGO_ENV=production hugo -v -s src/
