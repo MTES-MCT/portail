@@ -62,10 +62,11 @@ jobs:
             git push origin master
           fi
 workflows:
+  version: 2
   weekly-import:
     triggers:
       - schedule: 
-        cron: "0 0 * * 0" # every sunday
+          cron: "0 0 * * 0" # every sunday
     jobs:
       - import:
           filters:
