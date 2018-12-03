@@ -42,7 +42,9 @@ jobs:
               mv _index.md _index.md.bak
               find . -type f -name "*.md" -delete
               mv _index.md.bak _index.md
-              find src/static/images/startups -type f -name "*.(jpg|png)" -delete
+      - run:
+          name: Remove startup images files in repo
+          command: find src/static/images/startups -type f -name "*.(jpg|png)" -delete
       - run:
           name: Copy startups from betagouv to startup in repo
           command: |
@@ -57,7 +59,9 @@ jobs:
               mv _index.md _index.md.bak
               find . -type f -name "*.md" -delete
               mv _index.md.bak _index.md
-              find src/static/images/people -type f -name "*.(jpg|png)" -delete
+      - run:
+          name: Remove people images files in repo
+          command: find src/static/images/authors -type f -name "*.(jpg|png)" -delete
       - run:
           name: Copy authors from betagouv to people in repo
           command: |
