@@ -23,7 +23,7 @@ jobs:
     steps:
       - checkout
       - attach_workspace:
-          at: '~'
+          at: '~/project/portail'
       - run:
           name: "Build Website With Hugo"
           command: HUGO_ENV=production hugo -v -s src/
