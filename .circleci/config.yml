@@ -21,7 +21,9 @@ jobs:
           paths:
             - startups
             - authors
-      - deploy
+      - deploy:
+          command: |
+            echo "Deploy import from beta.gouv.fr"
   build:
     executor: hugo
     steps:
