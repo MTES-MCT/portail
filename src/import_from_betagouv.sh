@@ -16,12 +16,12 @@ grep -rl "mtes" > startups.txt
 cp startups.txt ../_authors
 cd ../_authors
 echo "Import des startups:\n"
-echo < startups.txt
+echo `cat startups.txt`
 pwd
 ls
 grep -rl "MTES" >> authors.txt
 echo "Import des auteurs:\n"
-echo < authors.txt
+echo `cat authors.txt`
 
 function get_authors {
  IFS='.'
@@ -34,7 +34,7 @@ function get_authors {
     fi
  done
  echo "Import des auteurs:\n"
- echo < authors.txt
+ echo `cat authors.txt`
  IFS=' '
 }
 
@@ -52,7 +52,7 @@ remove_old_files
 cd "$startups_dir"
 
 echo "Import des startups:\n"
-echo < startups.txt
+echo `cat startups.txt`
 
 while read -r line; do
  pwd
@@ -72,7 +72,7 @@ remove_old_files
 cd "$authors_dir"
 
 echo "Import des auteurs:\n"
-echo < authors.txt
+echo `cat authors.txt`
 
 while read -r line; do
  pwd
