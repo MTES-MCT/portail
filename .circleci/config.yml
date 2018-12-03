@@ -9,34 +9,27 @@ executors:
 jobs:
   import:
     executor: hugo
+    working_directory: /tmp
     steps:
-      - checkout
-      - add_ssh_keys:
-          fingerprints:
-            - "96:42:b8:98:23:ad:5b:3a:97:db:ac:1c:33:5a:57:00"
       - run: 
           name: "Import startups and people data from beta.gouv.fr"
-          command: bash src/import_from_betagouv.sh
-      - run: |
-          pwd
-          ls
-          git config credential.helper 'cache --timeout=120'
-          git config user.email "<circleci>"
-          git config user.name "CircleCi"
-          status=$(git status -s)
-          empty=''
-          if [ "$status" = "$empty" ]; then 
-            echo "Pas de modifications dans people et startup. Pas de deploy de l'import."
-            exit 0
-          else
-            git add .
-            git commit -m "Update import from beta.gouv.fr by circleci" -m "[ci skip]"
-            git push origin master
-          fi  
+          command: bash export_from_betagouv.sh
+      - store_artifacts:
+        - path: /tmp/artifacts
+      - persist_to_workspace:
+          root: /tmp/artifacts
+          paths:
+            - startups
+            - authors
   build:
     executor: hugo
     steps:
       - checkout
+      - attach_workspace:
+        at: /tmp/artifacts
+      - run: 
+          name: "Import startups and people data from beta.gouv.fr"
+          command: bash import_from_betagouv.sh
       - run:
           name: "Build Website With Hugo"
           command: HUGO_ENV=production hugo -v -s src/
@@ -56,24 +49,9 @@ jobs:
       - add_ssh_keys:
           fingerprints:
             - "96:42:b8:98:23:ad:5b:3a:97:db:ac:1c:33:5a:57:00"
-      - run: |
-          pwd
-          ls
-          rm -rf docs
-          mv src/docs .
-          git config credential.helper 'cache --timeout=120'
-          git config user.email "<circleci>"
-          git config user.name "CircleCi"
-          status=$(git status -s)
-          empty=''
-          if [ "$status" = "$empty" ]; then 
-            echo "Pas de modifications dans docs. Pas de deploy."
-            exit 0
-          else
-            git add .
-            git commit -m "Update site from circleci" -m "[ci skip]"
-            git push origin master
-          fi
+      - run:
+          name: "Deploy to repo"
+          command: bash deploy_to_repo.sh
 workflows:
   version: 2
   weekly-import:
