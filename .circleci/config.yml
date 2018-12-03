@@ -15,7 +15,7 @@ jobs:
           name: "Import startups and people data from beta.gouv.fr"
           command: bash export_from_betagouv.sh
       - store_artifacts:
-        - path: /tmp/artifacts
+          path: /tmp/artifacts
       - persist_to_workspace:
           root: /tmp/artifacts
           paths:
