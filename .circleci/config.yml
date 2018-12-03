@@ -27,14 +27,13 @@ jobs:
           name: List authors by mtes startup
           command: |
             while read -r line; do
-              echo "$line"
               startup_file="$line"
               IFS='.'
-              read -ra ADDR <<< "$startup_file"
+              read -ra ADDR \<\<\< "$startup_file"
               i=0
               for startup in "${ADDR[@]}"; do
                 if [ "$i" == 0 ]; then
-                  find . -type f -name '*.md' | xargs grep -rl "$startup" >>  $LIST_RESULTS/authors.txt
+                  find . -type f -name *.md | xargs grep -rl "$startup" >>  $LIST_RESULTS/authors.txt
                   i=$(( i + 1 ))
                 fi
               done
@@ -45,26 +44,26 @@ jobs:
           command: |
               cd src/content/startup
               mv _index.md _index.md.bak
-              find . -type f -name '*.md' -delete
+              find . -type f -name *.md -delete
               mv _index.md.bak _index.md
       - run:
           name: Copy startups from betagouv to startup in repo
           command: |
               while read -r line; do
-                cp "$line" src/content/startup"
+                cp "$line" src/content/startup
               done < $LIST_RESULTS/startups.txt
       - run:
           name: Remove people md files in repo
           command: |
               cd src/content/people
               mv _index.md _index.md.bak
-              find . -type f -name '*.md' -delete
+              find . -type f -name *.md -delete
               mv _index.md.bak _index.md
       - run:
           name: Copy authors from betagouv to people in repo
           command: |
               while read -r line; do
-                cp "$line" src/content/people"
+                cp "$line" src/content/people
               done < $LIST_RESULTS/startups.txt
       - run:
           name: Deploy to repo
