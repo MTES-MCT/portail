@@ -3,6 +3,7 @@ pwd
 cd ../../project
 mkdir -p betagouv
 cd betagouv
+pwd
 git clone https://github.com/betagouv/beta.gouv.fr.git
 betagouv_dir='~/project/betagouv/beta.gouv.fr'
 startups_dir='~/project/betagouv/beta.gouv.fr/content/_startups'
