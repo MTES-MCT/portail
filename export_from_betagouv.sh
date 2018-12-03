@@ -46,3 +46,5 @@ pwd
 while read -r line; do
  cp "$line" "$ROOT/src/content/startup"
 done < "$ROOT/artifacts/startups.txt"
+
+rm -rf "$ROOT/betagouv"
