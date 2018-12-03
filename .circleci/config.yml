@@ -36,8 +36,7 @@ jobs:
   build:
     executor: hugo
     steps:
-      - attach_workspace:
-          at: '~'
+      - checkout
       - run:
           name: "Build Website With Hugo"
           command: HUGO_ENV=production hugo -v -s src/
@@ -52,6 +51,8 @@ jobs:
     executor: hugo
     steps:
       - checkout
+      - attach_workspace:
+        at: src
       - add_ssh_keys:
           fingerprints:
             - "96:42:b8:98:23:ad:5b:3a:97:db:ac:1c:33:5a:57:00"
