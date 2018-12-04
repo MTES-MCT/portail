@@ -1,0 +1,14 @@
+{{ define "main" }}
+<main id="main">
+<div class="page article">
+  {{ partial "geeklunch/hero-geeklunch.html" . }}
+  <section class="section section-white">
+    <div class="container">
+      <div class="richtext">
+        {{ .Content | markdownify }}
+      </div>
+    </div>
+  </section>
+</div>
+</main>
+{{ end }}

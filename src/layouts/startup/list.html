@@ -11,7 +11,7 @@
         </div>
         <div class="grid">
             {{ range (.Pages.ByParam "status")}}
-            {{ partial "card.html" . }}
+            {{ partial "startup/card.html" . }}
             {{ end }}
         </div>
     </div>

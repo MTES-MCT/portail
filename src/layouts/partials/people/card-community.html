@@ -1,7 +1,7 @@
 <div class="card">
     {{ if .Params.link }} <a href="{{ .Params.link }}" target="\_blank" rel="noopener">{{ end }}
         <div class="card__cover">
-            {{ partial "avatar.html" . }}
+            {{ partial "people/avatar.html" . }}
         </div>
         <div class="card__content">
             <h3>{{ .Params.fullname }}</h3>

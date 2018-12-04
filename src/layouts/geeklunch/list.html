@@ -1,0 +1,18 @@
+{{ define "main" }}
+<main id="main">
+    {{ partial "hero-page.html" . }}
+    <section class="section section-grey">
+      <div class="container article__container">
+        {{ range .Pages.ByLastmod.Reverse }}
+          <article class="article article__preview panel">
+            <a class="article__link" href="{{ .Permalink }}" title="{{ humanize (substr .File.TranslationBaseName 11) }}">
+              <h2 class="article__title">{{ humanize (substr .File.TranslationBaseName 11) }}</h2>
+            </a>
+            <div class="article__meta">Paru le {{ (time (substr .File.TranslationBaseName 0 10)).Format "02/01/2006" }}</div>
+            <a class="article__more" href="{{ .Permalink }}">Lire la suite…</a>
+          </article>     
+          {{ end }}  
+      </div>
+    </section>
+</main>
+{{ end }}
