@@ -107,7 +107,7 @@ jobs:
           command: bash deploy_to_repo.sh
 workflows:
   version: 2
-  weekly-import:
+  weekly-import-build:
     triggers:
       - schedule: 
           cron: "0 0 * * 0" # every sunday
@@ -115,7 +115,7 @@ workflows:
             branches:
               only: master
     jobs:
-      - import:
+      - build:
           filters:
             branches:
               only: master
