@@ -44,7 +44,7 @@ jobs:
               mv _index.md.bak _index.md
       - run:
           name: Remove startup images files in repo
-          command: find src/static/images/startups -type f -name "*.(jpg|png)" -delete
+          command: find src/static/images/startups -type f -name "*.*" -delete
       - run:
           name: Copy startups from betagouv to startup in repo
           command: |
@@ -52,7 +52,7 @@ jobs:
                 cp "$line" src/content/startup
                 filename=$(basename "$line")
                 startup="${filename%.*}"
-                find $BETAGOUV/img/startups -type f -name "$startup.(jpg|png)" -exec cp {} src/static/images/startups \;
+                find $BETAGOUV/img/startups/ -type f -name "$startup.*" -exec cp {} src/static/images/startups/ \;
               done < $LIST_RESULTS/startups.txt
       - run:
           name: Remove people md files in repo
@@ -63,7 +63,7 @@ jobs:
               mv _index.md.bak _index.md
       - run:
           name: Remove people images files in repo
-          command: find src/static/images/people -type f -name "*.(jpg|png)" -delete
+          command: find src/static/images/people -type f -name "*.*" -delete
       - run:
           name: Copy authors from betagouv to people in repo
           command: |
@@ -71,7 +71,7 @@ jobs:
                 cp "$line" src/content/people
                 filename=$(basename "$line")
                 author="${filename%.*}"
-                find $BETAGOUV/img/authors -type f -name "$author.(jpg|png)" -exec cp {} src/static/images/people \;
+                find $BETAGOUV/img/authors/ -type f -name "$author.*" -exec cp {} src/static/images/people/ \;
               done < $LIST_RESULTS/authors.txt
       - run:
           name: Deploy to repo
