@@ -1,22 +1,15 @@
 {{ define "main" }}
+<main id="main">
+<div class="page article" id="presentation">
+    {{ partial "hero-page.html" . }}
+</div>
 
-<div class="hero article__hero">
-    <div class="hero__container">
-      
-        <img src="{{ .Site.BaseURL }}/images/fabrique-numérique_AB.jpg" alt="Nous créons des services publics numériques" />
-      
-      <div class="article__container" style="text-align: center;">
-        <h1 class="article__title">{{ .Title }}</h1>
-      </div>
+<section class="documentation">
+    <div class="main-pane">
+        <div class="markdown">
+            {{ .Content | markdownify }}
+        </div>
     </div>
-  </div>
-
-  <section class="section section-white">
-    <div class="container">
-      <div class="column">
-        {{ .Content | markdownify }}
-      </div>
-    </div>
-  </section>
-
+</section>
+</main>
 {{ end }}

@@ -2,6 +2,8 @@
 title: Ressources digitales
 ---
 
+## Résumé
+
 Les ressources digitales pour transformer notre administration.
 
 ## Qu'est ce qu'un hackathon, un barcamp, le design de service ? 
