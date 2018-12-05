@@ -4,9 +4,9 @@
     {{ partial "hero-page.html" . }}
 </div>
 
-<section class="documentation">
-    <div class="main-pane">
-        <div class="markdown">
+<section class="section">
+    <div class="container">
+        <div class="richtext">
             {{ .Content | markdownify }}
         </div>
     </div>
