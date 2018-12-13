@@ -115,6 +115,7 @@ workflows:
             branches:
               only: master
     jobs:
+      - import
       - build:
           filters:
             branches:
