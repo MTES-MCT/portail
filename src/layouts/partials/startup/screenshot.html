@@ -3,5 +3,5 @@
 {{ else if (fileExists (path.Join "static/images/startups/" (delimit (slice (.File.TranslationBaseName) "png") "."))) }}
 <img class="screenshot" src="{{ .Site.BaseURL }}/images/startups/{{ .File.TranslationBaseName }}.png" title="Interface de {{ .Params.title }}" alt="">
 {{ else }}
-<img class="screenshot" src="{{ .Site.BaseURL }}/images/fabnum.png" title="Interface de {{ .Params.title }} en construction..." alt="">
+<img class="screenshot" src="{{ .Site.BaseURL }}/images/fabrique-numérique_AB.jpg" title="Interface de {{ .Params.title }} en construction..." alt="">
 {{ end }}
