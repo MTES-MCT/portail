@@ -93,6 +93,10 @@
   </url>
   
   <url>
+    <loc>https://mtes-mct.github.io/portail/people/claire.vigier/</loc>
+  </url>
+  
+  <url>
     <loc>https://mtes-mct.github.io/portail/people/clemence.gourragne/</loc>
   </url>
   
@@ -106,6 +110,10 @@
   
   <url>
     <loc>https://mtes-mct.github.io/portail/people/elise.marion/</loc>
+  </url>
+  
+  <url>
+    <loc>https://mtes-mct.github.io/portail/people/emmanuel.flahaut/</loc>
   </url>
   
   <url>
@@ -244,6 +252,10 @@
   <url>
     <loc>https://mtes-mct.github.io/portail/tags/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mtes-mct.github.io/portail/startup/trackdechets/</loc>
   </url>
   
 </urlset>
