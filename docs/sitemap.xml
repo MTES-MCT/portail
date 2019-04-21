@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://mtes-mct.github.io/portail/people/</loc>
+    <lastmod>2018-11-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mtes-mct.github.io/portail/startup/</loc>
+    <lastmod>2018-11-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://mtes-mct.github.io/portail/geeklunch/2016-06-20-geek-lunch-invasiv-alert/</loc>
     <priority>0</priority>
   </url>
@@ -273,10 +283,6 @@
   </url>
   
   <url>
-    <loc>https://mtes-mct.github.io/portail/people/</loc>
-  </url>
-  
-  <url>
     <loc>https://mtes-mct.github.io/portail/startup/filharmonic/</loc>
   </url>
   
@@ -310,10 +316,6 @@
   
   <url>
     <loc>https://mtes-mct.github.io/portail/ressources/</loc>
-  </url>
-  
-  <url>
-    <loc>https://mtes-mct.github.io/portail/startup/</loc>
   </url>
   
   <url>
