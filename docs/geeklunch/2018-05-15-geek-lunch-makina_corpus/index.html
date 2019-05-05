@@ -326,14 +326,16 @@ sudo -u postgres -s -- psql -d ${dbname} -c &quot;CREATE EXTENSION postgis;&quot
 
 <ul>
 <li><a href="http://t-rex.tileserver.ch/">Installer t-rex</a></li>
-<li>Générer automatiquement un fichier de conf:
-<code>
-t_rex genconfig --dbconn postgresql://gisuser:corpus@localhost/bbl
-</code></li>
-<li>Servir les tuiles:
-<code>
-t_rex serve --config trexconfig.toml
-</code></li>
+
+<li><p>Générer automatiquement un fichier de conf:</p>
+
+<pre><code>t_rex genconfig --dbconn postgresql://gisuser:corpus@localhost/bbl
+</code></pre></li>
+
+<li><p>Servir les tuiles:</p>
+
+<pre><code>t_rex serve --config trexconfig.toml
+</code></pre></li>
 </ul>
 
 <p><strong>⚠ <code>query_limit</code> et <code>geometry_type</code></strong></p>
@@ -355,16 +357,16 @@ t_rex serve --config trexconfig.toml
 <h2 id="tippecanoe-générer-les-tuiles">Tippecanoe : Générer les tuiles</h2>
 
 <ul>
-<li>Conversion du GeoJSON en tuiles vectorielles :
-<code>
-tippecanoe
+<li><p>Conversion du GeoJSON en tuiles vectorielles :</p>
+
+<pre><code>tippecanoe
 -o volumesbatisparis2011.mbtiles
 --maximum-zoom=g
 --drop-smallest-as-needed
 --read-parallel
 --detect-shared-borders
 volumesbatisparis2011.geojson
-</code></li>
+</code></pre></li>
 </ul>
 
 <p>&rarr; Fichier <em>Mbtiles</em></p>
@@ -376,11 +378,11 @@ volumesbatisparis2011.geojson
 <h2 id="tippecanoe-servir-les-tuiles">Tippecanoe : Servir les tuiles</h2>
 
 <ul>
-<li>Pas de serveur intégré à Tippecanoe, on utilise <a href="https://github.com/klokantech/tileserver-gl">tileserver-gl</a> par exemple</li>
-</ul>
+<li><p>Pas de serveur intégré à Tippecanoe, on utilise <a href="https://github.com/klokantech/tileserver-gl">tileserver-gl</a> par exemple</p>
 
 <pre><code>docker run --rm -it -v $(pwd):/data -p 8080:80 klokantech/tileserver-gl
-</code></pre>
+</code></pre></li>
+</ul>
 
 <hr />
 
