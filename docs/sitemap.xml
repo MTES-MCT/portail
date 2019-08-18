@@ -266,10 +266,6 @@
   </url>
   
   <url>
-    <loc>https://mtes-mct.github.io/portail/startup/assec/</loc>
-  </url>
-  
-  <url>
     <loc>https://mtes-mct.github.io/portail/startup/aeris/</loc>
   </url>
   
@@ -278,12 +274,15 @@
   </url>
   
   <url>
+    <loc>https://mtes-mct.github.io/portail/startup/assec/</loc>
+  </url>
+  
+  <url>
     <loc>https://mtes-mct.github.io/portail/startup/camino/</loc>
   </url>
   
   <url>
     <loc>https://mtes-mct.github.io/portail/categories/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -332,7 +331,6 @@
   
   <url>
     <loc>https://mtes-mct.github.io/portail/tags/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
