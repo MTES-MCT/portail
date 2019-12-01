@@ -18,7 +18,7 @@
       <guid>https://mtes-mct.github.io/portail/geeklunch/2016-06-20-geek-lunch-invasiv-alert/</guid>
       <description>Présentation du projet développé pendant le hackathon #HackBioDiv par LM et ST
 Objectif : Détecter les populations invasives via les réseaux sociaux
-1. Par une utilisation via l&amp;rsquo;interface de recherche des réseaux sociaux
+1. Par une utilisation via l&#39;interface de recherche des réseaux sociaux
  Google Trends sur la recherche Frelon Asiatique : https://www.google.fr/trends/explore#q=%2Fm%2F07kf39s et une carte de France avec la localisation des recherches du terme : https://www.google.fr/trends/explore#q=/m/07kf39s&amp;amp;geo=FR Google Trends expose les résultats par entité nommée (Google Trends agrège toutes les termes de recherches qui font référence à la même chose &amp;ldquo;Frelon asiatique&amp;rdquo; ou son nom latin &amp;ldquo;vespa velutina&amp;rdquo; ou &amp;ldquo;Asian predatory wasp&amp;rdquo;).</description>
     </item>
     
@@ -29,8 +29,9 @@ Objectif : Détecter les populations invasives via les réseaux sociaux
       
       <guid>https://mtes-mct.github.io/portail/geeklunch/2016-10-25-geek-lunch-qgis/</guid>
       <description>Initiation à Qgis par Joël Mognol
-Objectifs : - apprendre à faire des cartes géographiques simples sous Qgis ; - connaître les pistes d&amp;rsquo;approfondissement.
-Nous avons utilisé des données publiques de base (GéoFLA de l&amp;rsquo;IGN) et des données intéressant la DAM pour passer immédiatement à la pratique : 1. les bases de l&amp;rsquo;interface, le chargement de données simples et une analyse thématique simple ; 2. la mise en page d&amp;rsquo;une carte simple ; 3.</description>
+Objectifs :
+ apprendre à faire des cartes géographiques simples sous Qgis ; connaître les pistes d&#39;approfondissement.  Nous avons utilisé des données publiques de base (GéoFLA de l&#39;IGN) et des données intéressant la DAM pour passer immédiatement à la pratique :
+ les bases de l&#39;interface, le chargement de données simples et une analyse thématique simple ; la mise en page d&#39;une carte simple ; la problématique des projections avec une carte des nouvelles régions de France ; la mise en page de plusieurs cartes à la fois avec les régions de métropole et d&#39;outre-mer ; la résolution des données avec la cartographie des ports, des pays et des océans de part le monde ; la problématique de la jointure de données attributaires et de données géographiques avec la flotte marchande par pays ; l&#39;analyse thématique de données jointes avec le cas supra.</description>
     </item>
     
     <item>
@@ -58,7 +59,7 @@ Nous avons utilisé des données publiques de base (GéoFLA de l&amp;rsquo;IGN) 
       
       <guid>https://mtes-mct.github.io/portail/geeklunch/2017-02-28-geek-lunch-tps/</guid>
       <description>Présentation de TPS le service de téléprocédure simplifiée du SGMAP par CM :
-- Accès au service : https://tps.apientreprise.fr - Considérations générales : présentation de CM - Récépissé de déclaration à la CNIL pour le traitement de données à caractère personnel par TPS - Exemple de dématérialisation des demandes de création d&amp;rsquo;entreprises de transport de personne à la DRIEA : notice explicative</description>
+ Accès au service : https://tps.apientreprise.fr Considérations générales : présentation de CM Récépissé de déclaration à la CNIL pour le traitement de données à caractère personnel par TPS Exemple de dématérialisation des demandes de création d&#39;entreprises de transport de personne à la DRIEA : notice explicative  </description>
     </item>
     
     <item>
@@ -67,7 +68,7 @@ Nous avons utilisé des données publiques de base (GéoFLA de l&amp;rsquo;IGN) 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mtes-mct.github.io/portail/geeklunch/2017-03-07-geek-lunch-geoservices_ign/</guid>
-      <description>Présentation des services de visualisation cartographique et des données de l&amp;rsquo;IGN
+      <description>Présentation des services de visualisation cartographique et des données de l&#39;IGN
 Lien vers la présentation.</description>
     </item>
     
@@ -79,7 +80,7 @@ Lien vers la présentation.</description>
       <guid>https://mtes-mct.github.io/portail/geeklunch/2017-05-30-geek-lunch-gephi/</guid>
       <description>Présentation de Gephi par Laurence Matringe et Luc Mathis.
 https://gephi.org
-Gephi est un logiciel de visualisation et d&amp;rsquo;exploration de graphe. Il peut par exemple vous permettre de connaître le réseau des acteurs les plus influents concernant votre politique publique. Les data visualizations exploratoires sur les liens entre les organismes du RST ont notamment été présentées à titre illustratif. La séance s&amp;rsquo;est terminée - en guise de travaux pratiques - par la représentation du jeu d&amp;rsquo;acteurs de Notre Dame des Landes à partir des données OpenData disponibles sur data.</description>
+Gephi est un logiciel de visualisation et d&#39;exploration de graphe. Il peut par exemple vous permettre de connaître le réseau des acteurs les plus influents concernant votre politique publique. Les data visualizations exploratoires sur les liens entre les organismes du RST ont notamment été présentées à titre illustratif. La séance s&#39;est terminée - en guise de travaux pratiques - par la représentation du jeu d&#39;acteurs de Notre Dame des Landes à partir des données OpenData disponibles sur data.</description>
     </item>
     
     <item>
@@ -88,7 +89,7 @@ Gephi est un logiciel de visualisation et d&amp;rsquo;exploration de graphe. Il 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mtes-mct.github.io/portail/geeklunch/2017-10-16-geek-lunch-crowdsourcing_connectivite_mobile/</guid>
-      <description>A l&amp;rsquo;heure du développement croissant de services dépendants du réseau de téléphonie mobile (ex : voiture autonome), Philippe Clopeau (ANFR) nous parle d&amp;rsquo;un projet de crowdsourcing de la connectivité mobile.</description>
+      <description>A l&#39;heure du développement croissant de services dépendants du réseau de téléphonie mobile (ex : voiture autonome), Philippe Clopeau (ANFR) nous parle d&#39;un projet de crowdsourcing de la connectivité mobile.</description>
     </item>
     
     <item>
@@ -99,7 +100,7 @@ Gephi est un logiciel de visualisation et d&amp;rsquo;exploration de graphe. Il 
       <guid>https://mtes-mct.github.io/portail/geeklunch/2017-11-03-geek-lunch-opensolarmap_et_iaplu/</guid>
       <description>Au programme :
 - OpenSolarMap par Christian Quest (Etalab)
-OpenSolarMap est un site web de crowdsourcing de l&amp;rsquo;orientation des toits des bâtiments, pour sélectionner les plus appropriés à la pose de panneaux solaires thermiques ou photovoltaïques. La qualification par les humains de l&amp;rsquo;orientation d&amp;rsquo;un nombre suffisant de toits pourrait permettre d&amp;rsquo;entraîner un algorithme de deeplearning pour qu&amp;rsquo;il classifie l&amp;rsquo;ensemble des toits du territoire.
+OpenSolarMap est un site web de crowdsourcing de l&#39;orientation des toits des bâtiments, pour sélectionner les plus appropriés à la pose de panneaux solaires thermiques ou photovoltaïques. La qualification par les humains de l&#39;orientation d&#39;un nombre suffisant de toits pourrait permettre d&#39;entraîner un algorithme de deeplearning pour qu&#39;il classifie l&#39;ensemble des toits du territoire.
 - IAPLU par Marc Léobet (MTES et MCT)</description>
     </item>
     
@@ -109,8 +110,8 @@ OpenSolarMap est un site web de crowdsourcing de l&amp;rsquo;orientation des toi
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mtes-mct.github.io/portail/geeklunch/2017-11-30-geek-lunch-git_avec_github/</guid>
-      <description>&amp;ldquo;Push ton code sur GitHub !&amp;rdquo;
-Si le terme logiciel de gestion de code source vous fait peur, c&amp;rsquo;est le moment de plonger. Ce geek lunch sera l&amp;rsquo;occasion de découvrir les fondamentaux - accessibles à tous - de Git. Notre intervenant est Julien Bouquillon du ministère des affaires sociales.
+      <description>&amp;ldquo;Push ton code sur GitHub !&amp;quot;
+Si le terme logiciel de gestion de code source vous fait peur, c&#39;est le moment de plonger. Ce geek lunch sera l&#39;occasion de découvrir les fondamentaux - accessibles à tous - de Git. Notre intervenant est Julien Bouquillon du ministère des affaires sociales.
 Pour ceux qui ont raté la séance :
 La présentation de Julien.</description>
     </item>
@@ -122,7 +123,7 @@ La présentation de Julien.</description>
       
       <guid>https://mtes-mct.github.io/portail/geeklunch/2017-12-19-geek-lunch-deep_learning/</guid>
       <description>Au programme
-Le machine learning, ce n&amp;rsquo;est pas que pour les autres ! Vous n&amp;rsquo;avez pas non plus besoin d&amp;rsquo;être diplômé de Stanford pour vous y mettre. La preuve avec un exemple simple et ludique de classification automatique d&amp;rsquo;images (de chats, of course !), avec un peu de deep Learning simplifié grâce à ce Notebook en Python.
+Le machine learning, ce n&#39;est pas que pour les autres ! Vous n&#39;avez pas non plus besoin d&#39;être diplômé de Stanford pour vous y mettre. La preuve avec un exemple simple et ludique de classification automatique d&#39;images (de chats, of course !), avec un peu de deep Learning simplifié grâce à ce Notebook en Python.
 Intervenant
 Luc Mathis (MTES/CGDD)</description>
     </item>
@@ -134,7 +135,7 @@ Luc Mathis (MTES/CGDD)</description>
       
       <guid>https://mtes-mct.github.io/portail/geeklunch/2018-01-11-geek-lunch-grep_sur_le_jorf/</guid>
       <description>Au programme
-Nathann Cohen (CNRS) nous parlera de sa méthode d&amp;rsquo;extraction de données du JORF grâce à la commande grep et donc aux expressions régulières. Il publie notamment les données des nominations au JORF sur son site : www.steinertriples.fr.</description>
+Nathann Cohen (CNRS) nous parlera de sa méthode d&#39;extraction de données du JORF grâce à la commande grep et donc aux expressions régulières. Il publie notamment les données des nominations au JORF sur son site : www.steinertriples.fr.</description>
     </item>
     
     <item>
@@ -143,8 +144,8 @@ Nathann Cohen (CNRS) nous parlera de sa méthode d&amp;rsquo;extraction de donn�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mtes-mct.github.io/portail/geeklunch/2018-01-26-inauguration-de-la-fabrique-num%C3%A9rique/</guid>
-      <description>Accompagner, soutenir et porter les intrapreneurs des ministères en charge de l’écologie et des territoires : telle est la volonté de la Fabrique numérique. Inauguré le 26 janvier 2018, cet incubateur vise à aider des agents en position d&amp;rsquo;intrapreneurs à réaliser de nouveaux services numériques accessibles à tous pour transformer l’action publique et répondre aux besoins de tous les usagers d&amp;rsquo;aujourd&amp;rsquo;hui.
-L&amp;rsquo;article sur le site du ministère de la Transition écologique et solidaire</description>
+      <description>Accompagner, soutenir et porter les intrapreneurs des ministères en charge de l’écologie et des territoires : telle est la volonté de la Fabrique numérique. Inauguré le 26 janvier 2018, cet incubateur vise à aider des agents en position d&#39;intrapreneurs à réaliser de nouveaux services numériques accessibles à tous pour transformer l’action publique et répondre aux besoins de tous les usagers d&#39;aujourd&#39;hui.
+L&#39;article sur le site du ministère de la Transition écologique et solidaire</description>
     </item>
     
     <item>
@@ -153,10 +154,8 @@ L&amp;rsquo;article sur le site du ministère de la Transition écologique et so
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mtes-mct.github.io/portail/geeklunch/2018-03-08-geek-lunch-itowns/</guid>
-      <description>Picth initial
-Comment visualiser un territoire ou un phénomène spatialisé en interagissant avec des données géographiques ? Grâce à une application de géovisualisation ! Venez découvrir les recherches de l&amp;rsquo;IGN en visualisation de données géographiques, 3D, temporelles, hétérogènes, incertaines, etc. et un focus sur la plateforme iTowns.
-Présentation
-Sur Slideshare.</description>
+      <description>Picth initial Comment visualiser un territoire ou un phénomène spatialisé en interagissant avec des données géographiques ? Grâce à une application de géovisualisation ! Venez découvrir les recherches de l&#39;IGN en visualisation de données géographiques, 3D, temporelles, hétérogènes, incertaines, etc. et un focus sur la plateforme iTowns.
+Présentation Sur Slideshare.</description>
     </item>
     
     <item>
@@ -165,7 +164,7 @@ Sur Slideshare.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mtes-mct.github.io/portail/geeklunch/2018-03-26-api-avurnavs/</guid>
-      <description>En mer, il arrive que des événements perturbent la navigation en toute sécurité : épave, bouée disparue, phare en panne, tirs militaires etc. L&amp;rsquo;IMO (International Maritime Organization) et l&amp;rsquo;IHO (International Hydrographic Organization) imposent aux États signataires de la convention SOLAS (Safety of Life at Sea) de recenser et de diffuser les potentiels dangers à la navigation dans les eaux sous leurs responsabilités. Ces informations sont nommées navigational warnings dans les conventions internationales et « avis urgents aux navigateurs » (abrégé en AVURNAV) en France.</description>
+      <description>En mer, il arrive que des événements perturbent la navigation en toute sécurité : épave, bouée disparue, phare en panne, tirs militaires etc. L&#39;IMO (International Maritime Organization) et l&#39;IHO (International Hydrographic Organization) imposent aux États signataires de la convention SOLAS (Safety of Life at Sea) de recenser et de diffuser les potentiels dangers à la navigation dans les eaux sous leurs responsabilités. Ces informations sont nommées navigational warnings dans les conventions internationales et « avis urgents aux navigateurs » (abrégé en AVURNAV) en France.</description>
     </item>
     
     <item>
@@ -174,7 +173,8 @@ Sur Slideshare.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mtes-mct.github.io/portail/geeklunch/2018-05-15-geek-lunch-makina_corpus/</guid>
-      <description>Pitch initial Cette session a été consacrée à l&amp;rsquo;état de l&amp;rsquo;art des technologies open source pour la cartographie en matière de tuilage vectoriel. Nos intervenants travaillent chez Makina Corpus, élue entreprise Open Source de l’année au Paris Open Source Summit : - Frédéric Bonifas, développeur carto ; - Jean-Pierre Oliva, fondateur de Makina Corpus ; - Olivia Duval, directrice de Makina Corpus Paris ; - Simon Georges, expert Drupal et SEO.</description>
+      <description>Pitch initial Cette session a été consacrée à l&#39;état de l&#39;art des technologies open source pour la cartographie en matière de tuilage vectoriel. Nos intervenants travaillent chez Makina Corpus, élue entreprise Open Source de l’année au Paris Open Source Summit :
+ Frédéric Bonifas, développeur carto ; Jean-Pierre Oliva, fondateur de Makina Corpus ; Olivia Duval, directrice de Makina Corpus Paris ; Simon Georges, expert Drupal et SEO.  Présentation  Makina Corpus  Société de Services en Logiciels Libres (SSLL) Développement d’applications web et mobiles (application métier, front-end, cartographie, CMS, mobile, data) Audits Formation   Tuiles Ensemble d’images de 256x256 pixels</description>
     </item>
     
     <item>
@@ -183,8 +183,9 @@ Sur Slideshare.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mtes-mct.github.io/portail/geeklunch/2018-05-22-geek-lunch-projets-environnement-geomce/</guid>
-      <description>Picth initial Cette session sera l&amp;rsquo;occasion de découvrir deux exemples concrets de services numériques que le CGDD a développé selon une méthode de design de service : - www.projets-environnement.gouv.fr : diffusion des études d&amp;rsquo;impact environnemental aux citoyens (basé sur France Connect et www.demarches-simplifiees.fr, ex-TPS) ; - GéoMCE : géolocalisation des mesures compensatoires environnementales.
-Nos intervenants seront : - Olivier Garry, conseiller numérique et design au CGDD ; - Cyril Aeck, chef de projet au CP2I ; - Jean-Philippe Simonnet, chef du bureau de la diffusion WEB et WEB Sémantique du CGDD.</description>
+      <description>Picth initial Cette session sera l&#39;occasion de découvrir deux exemples concrets de services numériques que le CGDD a développé selon une méthode de design de service :
+ www.projets-environnement.gouv.fr : diffusion des études d&#39;impact environnemental aux citoyens (basé sur France Connect et www.demarches-simplifiees.fr, ex-TPS) ; GéoMCE : géolocalisation des mesures compensatoires environnementales.  Nos intervenants seront :
+ Olivier Garry, conseiller numérique et design au CGDD ; Cyril Aeck, chef de projet au CP2I ; Jean-Philippe Simonnet, chef du bureau de la diffusion WEB et WEB Sémantique du CGDD.</description>
     </item>
     
     <item>
@@ -202,7 +203,7 @@ Nos intervenants seront : - Olivier Garry, conseiller numérique et design au CG
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mtes-mct.github.io/portail/people/alexandre.dupont/</guid>
-      <description>La transformation numérique, écologique et économique de notre société s&amp;rsquo;appuiera sur une transformation de notre action publique.</description>
+      <description>La transformation numérique, écologique et économique de notre société s&#39;appuiera sur une transformation de notre action publique.</description>
     </item>
     
     <item>
@@ -319,7 +320,7 @@ Nos intervenants seront : - Olivier Garry, conseiller numérique et design au CG
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mtes-mct.github.io/portail/people/guillaume.levieux/</guid>
-      <description>Investigateur, réaliste. A chaque mission, l&amp;rsquo;expérience du terrain est salutaire et décisive. Toujours fan des volcans et de ceux qui vivent dessus.</description>
+      <description>Investigateur, réaliste. A chaque mission, l&#39;expérience du terrain est salutaire et décisive. Toujours fan des volcans et de ceux qui vivent dessus.</description>
     </item>
     
     <item>
@@ -427,7 +428,7 @@ Nos intervenants seront : - Olivier Garry, conseiller numérique et design au CG
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mtes-mct.github.io/portail/people/matthieu.heurtel/</guid>
-      <description>Transformer l&amp;rsquo;action publique sans la dénaturer</description>
+      <description>Transformer l&#39;action publique sans la dénaturer</description>
     </item>
     
     <item>
@@ -436,7 +437,7 @@ Nos intervenants seront : - Olivier Garry, conseiller numérique et design au CG
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mtes-mct.github.io/portail/people/matthieu.lassalvy/</guid>
-      <description>Coder pour des shampoings c&amp;rsquo;est bien mais coder pour Demain c&amp;rsquo;est mieux! Graffeur, Joueur de jeu vidéo et né dans les vignes Montpelliéraine élevé au 80&amp;frasl;86.</description>
+      <description>Coder pour des shampoings c&#39;est bien mais coder pour Demain c&#39;est mieux! Graffeur, Joueur de jeu vidéo et né dans les vignes Montpelliéraine élevé au 80/86.</description>
     </item>
     
     <item>
@@ -454,7 +455,7 @@ Nos intervenants seront : - Olivier Garry, conseiller numérique et design au CG
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mtes-mct.github.io/portail/people/michel.perrel/</guid>
-      <description>Veux aider le monde agricole à s&amp;rsquo;adapter aux épisodes de sécheresse.</description>
+      <description>Veux aider le monde agricole à s&#39;adapter aux épisodes de sécheresse.</description>
     </item>
     
     <item>
@@ -499,7 +500,7 @@ Nos intervenants seront : - Olivier Garry, conseiller numérique et design au CG
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mtes-mct.github.io/portail/people/roxane.schultz/</guid>
-      <description>Fan d&amp;rsquo;utilité sociale</description>
+      <description>Fan d&#39;utilité sociale</description>
     </item>
     
     <item>
@@ -544,7 +545,7 @@ Nos intervenants seront : - Olivier Garry, conseiller numérique et design au CG
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mtes-mct.github.io/portail/people/stephane.legouffe/</guid>
-      <description>Developpeur FullStack JS, j&amp;rsquo;adore jouer avec NodeJS, GraphQL, VueJs, Angular, React et aussi avec des bots et des objets connectés ! 🤖</description>
+      <description>Developpeur FullStack JS, j&#39;adore jouer avec NodeJS, GraphQL, VueJs, Angular, React et aussi avec des bots et des objets connectés ! 🤖</description>
     </item>
     
     <item>
@@ -553,7 +554,7 @@ Nos intervenants seront : - Olivier Garry, conseiller numérique et design au CG
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mtes-mct.github.io/portail/people/stephane.raimbault/</guid>
-      <description>Aime les solutions simples et plein d&amp;rsquo;autres trucs compliqués.</description>
+      <description>Aime les solutions simples et plein d&#39;autres trucs compliqués.</description>
     </item>
     
     <item>
@@ -598,7 +599,7 @@ Nos intervenants seront : - Olivier Garry, conseiller numérique et design au CG
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mtes-mct.github.io/portail/startup/a-dock/</guid>
-      <description>Le problème : le contexte complexe du transport routier de marchandises Le transport routier de marchandises est un secteur aux acteurs très hétérogènes (près de la moitié sont des TPE-PME), impacté par une concurrence européenne forte et parfois déloyale, challengé par l&amp;rsquo;essor des Véhicules Utilitaires Légers (VUL) et de nouveaux acteurs issus du numérique. Ces complexités viennent mettre à mal le tissu économique de cette profession réglementée et implantée sur l’ensemble du territoire, et présentent des risques forts de dérèglementation du secteur.</description>
+      <description>Le problème : le contexte complexe du transport routier de marchandises Le transport routier de marchandises est un secteur aux acteurs très hétérogènes (près de la moitié sont des TPE-PME), impacté par une concurrence européenne forte et parfois déloyale, challengé par l&#39;essor des Véhicules Utilitaires Légers (VUL) et de nouveaux acteurs issus du numérique. Ces complexités viennent mettre à mal le tissu économique de cette profession réglementée et implantée sur l’ensemble du territoire, et présentent des risques forts de dérèglementation du secteur.</description>
     </item>
     
     <item>
@@ -607,7 +608,7 @@ Nos intervenants seront : - Olivier Garry, conseiller numérique et design au CG
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mtes-mct.github.io/portail/startup/aeris/</guid>
-      <description>En France, 45 000 installations industrielles sont régulièrement contrôlées par 1 500 inspecteurs de l&amp;rsquo;environnement. Plus de 2 500 de ces installations présentent des enjeux particuliers vis-à-vis de la qualité de l&amp;rsquo;air. Les législations européennes, nationales ou locales définissent des règles complexes pour ces installations, leur imposant des niveaux limites de polluants rejetés dans l’air et des mesures fréquentes des quantité de polluants rejetés.
+      <description>En France, 45 000 installations industrielles sont régulièrement contrôlées par 1 500 inspecteurs de l&#39;environnement. Plus de 2 500 de ces installations présentent des enjeux particuliers vis-à-vis de la qualité de l&#39;air. Les législations européennes, nationales ou locales définissent des règles complexes pour ces installations, leur imposant des niveaux limites de polluants rejetés dans l’air et des mesures fréquentes des quantité de polluants rejetés.
 Aujourd’hui, les exploitants transmettent les résultats de surveillance des rejets de polluants aux inspecteurs de l’environnement par courrier postal ou électronique, sans cadre défini.</description>
     </item>
     
@@ -646,8 +647,8 @@ Dès le projet esquissé, un véritable calvaire commence et se répète ensuite
       
       <guid>https://mtes-mct.github.io/portail/startup/co-construisons/</guid>
       <description>Calculer un potentiel solaire grâce à la qualification automatique de l’orientation des toits des bâtiments, faire du contrôle des pêches dans les outre mer grâce à des données satellitaires européennes disponibles en opendata, identifier rapidement des espèces de plantes….
-Nous assistons, au sein de l&amp;rsquo;administration publique, au développement de projets basés sur la qualification de données photographiques qui permettent d&amp;rsquo;améliorer ou de créer de nouveaux services d&amp;rsquo;intérêt général.
-Ces projets deviennent désormais possibles grâce à l&amp;rsquo;exploitation d’une nouvelle capacité d’analyse reposant sur les contributions digitales du grand public ou d’experts (on parle de “crowdsourcing”).</description>
+Nous assistons, au sein de l&#39;administration publique, au développement de projets basés sur la qualification de données photographiques qui permettent d&#39;améliorer ou de créer de nouveaux services d&#39;intérêt général.
+Ces projets deviennent désormais possibles grâce à l&#39;exploitation d’une nouvelle capacité d’analyse reposant sur les contributions digitales du grand public ou d’experts (on parle de “crowdsourcing”).</description>
     </item>
     
     <item>
@@ -676,8 +677,8 @@ En 1976, le rejet accidentel de dioxine sur la commune de Seveso en Italie a con
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mtes-mct.github.io/portail/startup/fluctuat/</guid>
-      <description>Le contexte La réglementation prévoit qu’une la lettre de voiture accompagne la marchandise dans le transport fluvial. Ce document doit être présenté aux autorités de contrôle à leur demande. Ce document est essentiel car il garantit que la marchandise a été chargée et déchargée conformément à l&amp;rsquo;accord passé entre le donneur d&amp;rsquo;ordre et le transporteur. Il comtient des informations liées à la marchandise elle-même, ainsi qu&amp;rsquo;au voyage.
-Jusqu&amp;rsquo;à présent, ce document est rédigé sur papier en plusieurs exemplaires qui circulent au gré du voyage entre le transporteur et le donneur d&amp;rsquo;ordre.</description>
+      <description>Le contexte La réglementation prévoit qu’une la lettre de voiture accompagne la marchandise dans le transport fluvial. Ce document doit être présenté aux autorités de contrôle à leur demande. Ce document est essentiel car il garantit que la marchandise a été chargée et déchargée conformément à l&#39;accord passé entre le donneur d&#39;ordre et le transporteur. Il comtient des informations liées à la marchandise elle-même, ainsi qu&#39;au voyage.
+Jusqu&#39;à présent, ce document est rédigé sur papier en plusieurs exemplaires qui circulent au gré du voyage entre le transporteur et le donneur d&#39;ordre.</description>
     </item>
     
     <item>
@@ -697,7 +698,8 @@ Parmi les risques qui pèsent sur le succès du projet, l’éventuelle présenc
       
       <guid>https://mtes-mct.github.io/portail/startup/permis-de-construire-facile/</guid>
       <description>Problème Déposer un permis de construire est une démarche importante dans le projet de vie d’un usager. Aujourd’hui, elle est souvent considérée comme un “parcours du combattant” semé d’incertitudes et d’interactions 100% papier avec le service qui l’instruit.
-Chaque année, plus d’un million de demandes d’autorisation d’urbanisme (permis de construire, d&amp;rsquo;aménager ou de démolir, déclarations préalables) sont déposées en France par des particuliers (80% des demandes) et des professionnels.</description>
+Chaque année, plus d’un million de demandes d’autorisation d’urbanisme (permis de construire, d&#39;aménager ou de démolir, déclarations préalables) sont déposées en France par des particuliers (80% des demandes) et des professionnels.
+En application du principe du guichet unique, elles sont adressées par courrier recommandé avec AR ou déposées à la mairie de la commune dans laquelle les travaux sont envisagés.</description>
     </item>
     
     <item>
@@ -716,7 +718,7 @@ Pour résorber ces bidonvilles, les territoires sont désormais incités par l�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mtes-mct.github.io/portail/startup/trackdechets/</guid>
-      <description>En 2016, 12 millions de tonnes de déchets dangereux ont été produits en France. Il s’agit de déchets contenants des éléments toxiques ou dangereux qui présentent des risques pour la santé et l&amp;rsquo;environnement.
+      <description>En 2016, 12 millions de tonnes de déchets dangereux ont été produits en France. Il s’agit de déchets contenants des éléments toxiques ou dangereux qui présentent des risques pour la santé et l&#39;environnement.
 Ces déchets sont soumis à une réglementation particulière pour leur gestion et leur valorisation. Afin de contrôler le traitement effectif des déchets, la loi impose aux sociétés productrices une traçabilité rigoureuse assurée par un bordereau de suivi de déchets qui permet de suivre le déchet de sa collecte à son traitement.</description>
     </item>
     
