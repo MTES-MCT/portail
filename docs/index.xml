@@ -746,7 +746,8 @@ Sur Slideshare.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mtes-mct.github.io/portail/startup/a-dock/</guid>
-      <description>Le problème : le contexte complexe du transport routier de marchandises Le transport routier de marchandises est un secteur aux acteurs très hétérogènes (près de la moitié sont des TPE-PME), impacté par une concurrence européenne forte et parfois déloyale, challengé par l&amp;rsquo;essor des Véhicules Utilitaires Légers (VUL) et de nouveaux acteurs issus du numérique. Ces complexités viennent mettre à mal le tissu économique de cette profession réglementée et implantée sur l’ensemble du territoire, et présentent des risques forts de dérèglementation du secteur.</description>
+      <description>Le constat initial : le transport routier de marchandises, un secteur exposé à des risques de déréglementation Le transport routier de marchandises en France (TRM) - 40 000 entreprises, 400 000 salariés - est historiquement et structurellement exposé à des risques de déréglementation. En effet, il est :
+ réglementé mais hétérogène, avec une nette dispersion des entreprises : +50% de TPE-PME. impacté par une concurrence européenne forte et déséquilibrée, du fait d&amp;rsquo;une harmonisation européenne faiblement effective : 45% des transports intérieurs sont réalisés par des acteurs étrangers.</description>
     </item>
     
     <item>
@@ -816,6 +817,16 @@ La réglementation des biocarburants s’effectue en fonction de la nature de la
       <description>Calculer un potentiel solaire grâce à la qualification automatique de l’orientation des toits des bâtiments, faire du contrôle des pêches dans les outre mer grâce à des données satellitaires européennes disponibles en opendata, identifier rapidement des espèces de plantes….
 Nous assistons, au sein de l&amp;rsquo;administration publique, au développement de projets basés sur la qualification de données photographiques qui permettent d&amp;rsquo;améliorer ou de créer de nouveaux services d&amp;rsquo;intérêt général.
 Ces projets deviennent désormais possibles grâce à l&amp;rsquo;exploitation d’une nouvelle capacité d’analyse reposant sur les contributions digitales du grand public ou d’experts (on parle de “crowdsourcing”).</description>
+    </item>
+    
+    <item>
+      <title>Cons&#39;eau</title>
+      <link>https://mtes-mct.github.io/portail/startup/conseau/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mtes-mct.github.io/portail/startup/conseau/</guid>
+      <description>Le problème La sécheresse résulte d’un déséquilibre entre les ressources disponibles et les besoins en eau. Ce déséquilibre est bien souvent localisé et défini dans le temps. En France métropolitaine les sécheresses s’observent principalement en période estivale. Dans le contexte du changement climatique, les épisodes de sécheresse en France sont de plus en plus fréquents, intenses et prolongés.
+Près d’un tiers du territoire métropolitain est classé en zone des répartitions des eaux, dans ces zones, le déséquilibre entre les ressources disponibles et les besoins est structurel.</description>
     </item>
     
     <item>
@@ -917,6 +928,17 @@ Pour résorber ces bidonvilles, les territoires sont désormais incités par l�
       <guid>https://mtes-mct.github.io/portail/startup/trackdechets/</guid>
       <description>En 2016, 12 millions de tonnes de déchets dangereux ont été produits en France. Il s’agit de déchets contenants des éléments toxiques ou dangereux qui présentent des risques pour la santé et l&amp;rsquo;environnement.
 Ces déchets sont soumis à une réglementation particulière pour leur gestion et leur valorisation. Afin de contrôler le traitement effectif des déchets, la loi impose aux sociétés productrices une traçabilité rigoureuse assurée par un bordereau de suivi de déchets qui permet de suivre le déchet de sa collecte à son traitement.</description>
+    </item>
+    
+    <item>
+      <title>Zéro logement vacant</title>
+      <link>https://mtes-mct.github.io/portail/startup/zero-logement-vacant/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mtes-mct.github.io/portail/startup/zero-logement-vacant/</guid>
+      <description>Le problème 1,4 millions de logements sont vacants depuis au moins deux ans dans le parc privé. La remise sur le marché de ces logements permettrait de redynamiser les territoires détendus, de constituer une offre abordable complémentaire au parc social dans les territoires tendus et de se substituer à la construction neuve de logements par artificialisation des sols.
+Historiquement, la lutte contre la vacance s’est principalement appuyée sur :
+ des outils coercitifs (taxe sur la vacance, réquisition) qui se sont révélés insuffisants parce que peu activables pour les collectivités.</description>
     </item>
     
   </channel>

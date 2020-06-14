@@ -366,6 +366,10 @@
   </url>
   
   <url>
+    <loc>https://mtes-mct.github.io/portail/startup/conseau/</loc>
+  </url>
+  
+  <url>
     <loc>https://mtes-mct.github.io/portail/startup/locatio/</loc>
   </url>
   
@@ -419,6 +423,10 @@
   
   <url>
     <loc>https://mtes-mct.github.io/portail/startup/trackdechets/</loc>
+  </url>
+  
+  <url>
+    <loc>https://mtes-mct.github.io/portail/startup/zero-logement-vacant/</loc>
   </url>
   
 </urlset>
