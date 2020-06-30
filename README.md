@@ -1,4 +1,10 @@
-# Development
+# Portail
+
+> MTES-MCT fabrique numérique's homepage
+
+A static site built with [Hugo](https://gohugo.io) and hosted on [Github pages](https://mtes-mct.github.io/portail/).
+
+## Development
 
 1. [Install Hugo](https://gohugo.io/overview/installing/)
 
@@ -23,9 +29,9 @@ When you `git push` your changes, circleci:
 
 * publishes the website into [Github pages](https://mtes-mct.github.io/portail/)
 
-# Add content
+## Add content
 
-In `src/content` directory, you change or add markdown files, except people and startups.
+In [src/content](src/content) directory, you change or add markdown files, except people and startups.
 
 People and startups are automatically imported from beta.gouv.fr.
 
