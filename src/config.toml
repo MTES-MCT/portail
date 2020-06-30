@@ -1,5 +1,5 @@
 baseURL = "https://mtes-mct.github.io/portail/"
 languageCode = "fr-FR"
-title = "La fabrique numérique"
+title = "La fabrique numérique du pôle ministériel de la transition écologique et solidaire et de la cohésion des territoires"
 theme = "fabnum"
 publishDir = "docs"
