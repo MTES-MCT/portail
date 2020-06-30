@@ -1,5 +1,7 @@
 <div class="grid">
-    {{ range .Params.people }}
+    {{ $startup := .File.BaseFileName }}
+    {{ range where .Site.Pages "Section" "people" }}
+    {{ if in .Params.startups $startup }}
     <div class="article__author panel">
         <div class="article__author-info">
             <div class="article__author-name">{{ .Params.Fullname }}</div>
@@ -8,9 +10,10 @@
         {{ partial "people/avatar.html" . }}
         <div class="article__author-description">
             {{ if .Params.Link }}<a href="{{ .Params.Link }}" target="_blank" rel="noopener">{{ end }}
-                {{ .Content | markdownify }}
+                {{ .Content }}
                 {{ if .Params.Link }}</a>{{ end }}
         </div>
     </div>
+    {{ end }}
     {{ end }}
 </div>
