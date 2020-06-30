@@ -51,13 +51,14 @@
 
     <div class="container">
       <div class="richtext">
-        {{ .Content | markdownify }}
+        {{ .Content }}
       </div>
     </div>
   </section>
 
   <section class="section section-grey">
     <div class="container">
+      <h1>L'équipe</h1>
       {{ partial "startup/grid-authors.html" . }}
     </div>
   </section>

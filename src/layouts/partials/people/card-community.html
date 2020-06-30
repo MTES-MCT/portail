@@ -8,7 +8,7 @@
             <div class="card__meta">
                 {{ .Params.role }}
             </div>
-            {{ .Content | markdownify }}
+            {{ .Content }}
         </div>
         {{ if .Params.link }}
     </a>{{ end }}
