@@ -1,9 +1,0 @@
-<div class="hero article__hero">
-    <div class="hero__container">
-        <img src="{{ .Site.BaseURL }}/images/fabrique-numérique_AB.jpg" alt="{{ .Params.title }}" />
-        <div class="article__container">
-          <h1 class="article__title">{{ humanize (substr .File.TranslationBaseName 11) }}</h1>
-          <div class="article__meta">Paru le {{ (time (substr .File.TranslationBaseName 0 10)).Format "02/01/2006" }}</div>
-        </div>
-    </div>
-  </div>
