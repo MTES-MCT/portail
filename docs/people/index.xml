@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Communauté on La fabrique numérique</title>
+    <title>Communauté on La fabrique numérique du pôle ministériel de la transition écologique et solidaire et de la cohésion des territoires</title>
     <link>https://mtes-mct.github.io/portail/people/</link>
-    <description>Recent content in Communauté on La fabrique numérique</description>
+    <description>Recent content in Communauté on La fabrique numérique du pôle ministériel de la transition écologique et solidaire et de la cohésion des territoires</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language>
     <lastBuildDate>Wed, 28 Nov 2018 00:00:00 +0000</lastBuildDate>
@@ -58,6 +58,25 @@
     
     <item>
       <title></title>
+      <link>https://mtes-mct.github.io/portail/people/brigitte.loubet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mtes-mct.github.io/portail/people/brigitte.loubet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://mtes-mct.github.io/portail/people/christophe.benard/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mtes-mct.github.io/portail/people/christophe.benard/</guid>
+      <description>fullname: Christophe BENARD role: Développeur github: ch-benard missions:
+ start: 2020-09-01 end: 2021-09-30 status: admin employer: MTES-MCT avatar: startups: resorption-bidonvilles   </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://mtes-mct.github.io/portail/people/christophe.riboulet/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -94,6 +113,15 @@
     
     <item>
       <title></title>
+      <link>https://mtes-mct.github.io/portail/people/dominique.lequepeys/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mtes-mct.github.io/portail/people/dominique.lequepeys/</guid>
+      <description>Coach startupOrpailleur du service public…en quête de pépites !</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://mtes-mct.github.io/portail/people/elias.boukamza/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -112,6 +140,15 @@
     
     <item>
       <title></title>
+      <link>https://mtes-mct.github.io/portail/people/emeric.vercoutre/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mtes-mct.github.io/portail/people/emeric.vercoutre/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://mtes-mct.github.io/portail/people/emile.ledure/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -125,6 +162,15 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mtes-mct.github.io/portail/people/emmanuel.flahaut/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://mtes-mct.github.io/portail/people/fabien.vauclair/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mtes-mct.github.io/portail/people/fabien.vauclair/</guid>
       <description></description>
     </item>
     
@@ -202,6 +248,24 @@
     
     <item>
       <title></title>
+      <link>https://mtes-mct.github.io/portail/people/henry.ciesielski/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mtes-mct.github.io/portail/people/henry.ciesielski/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://mtes-mct.github.io/portail/people/imane.nahmed/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mtes-mct.github.io/portail/people/imane.nahmed/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://mtes-mct.github.io/portail/people/jacob.carbonel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -270,6 +334,15 @@
       
       <guid>https://mtes-mct.github.io/portail/people/julien.dreher/</guid>
       <description>Coach qui aide à comprendre la logique des réseaux</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://mtes-mct.github.io/portail/people/julien.falxa/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mtes-mct.github.io/portail/people/julien.falxa/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -449,7 +522,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mtes-mct.github.io/portail/people/raphael.yharrassarry/</guid>
-      <description>​ Designer de chaos depuis le dernier milléanire.</description>
+      <description>Lead UX Designer depuis le dernier millénaire.</description>
     </item>
     
     <item>
@@ -557,6 +630,15 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mtes-mct.github.io/portail/people/tristan.robert/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://mtes-mct.github.io/portail/people/vincent.maubert/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mtes-mct.github.io/portail/people/vincent.maubert/</guid>
       <description></description>
     </item>
     
