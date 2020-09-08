@@ -7,6 +7,7 @@
     <title>Fabrique numérique - MTES-MCT</title>
   
     <link rel="stylesheet" href="https://mtes-mct.github.io/portail//css/template.css">
+    <link rel="stylesheet" href="https://mtes-mct.github.io/portail//css/tile.css">
     <link rel="stylesheet" href="https://mtes-mct.github.io/portail//css/grid.css">
     <link rel="stylesheet" href="https://mtes-mct.github.io/portail//css/authors-grid.css">
     <link rel="stylesheet" href="https://mtes-mct.github.io/portail//css/home.css">
@@ -103,8 +104,6 @@
             <ul class="nav__links">
                 <li class="nav__item"><a href="https://mtes-mct.github.io/portail//startup">Startups</a></li>
                 <li class="nav__item"><a href="https://mtes-mct.github.io/portail//people">Communauté</a></li>
-                <li class="nav__item"><a href="https://mtes-mct.github.io/portail//geeklunch">Geek Lunch</a></li>
-                <li class="nav__item"><a href="https://mtes-mct.github.io/portail//data">Données</a></li>
                 <li class="nav__item"><a href="https://mtes-mct.github.io/portail//ressources">Ressources</a></li>
             </ul>
         </nav>
@@ -117,7 +116,7 @@
         <img src="https://mtes-mct.github.io/portail//images/fabrique-numérique_AB.jpg" alt="Aides-territoires" />
         <div class="article__container" style="text-align: center;">
             <h1 class="article__title">Aides-territoires</h1>
-            <h2 class="article__title">Accéder aux meilleures aides pour les projets de votre territoire</h2>
+            <h2 class="article__title">Accédez aux meilleures aides pour financer et accompagner vos projets locaux</h2>
         </div>
     </div>
 </div>
@@ -130,7 +129,7 @@
     </div>
   </section>
 
-  <div class="notification full-width">Le produit est en <em>acceleration</em>.</div>
+  <div class="notification full-width">Le produit est en <em></em>.</div>
 
 
   <section class="section section-white">
@@ -140,7 +139,7 @@
           <li>
             Les statistiques d'usage
             
-            <em>ne sont pas encore disponibles.</em>
+            <a href="https://aides-territoires.beta.gouv.fr//stats" title="Statistiques de Aides-territoires">sont disponibles.</a>
             
           </li>
           <li>
@@ -150,9 +149,9 @@
             
           </li>
           <li>
-            Le porteur administratif est Ministère de la Cohésion des territoires / Ministère de la Transition écologique et solidaire.
+            Le porteur administratif est Ministère de la Cohésion des territoires et des relations avec les collectivités territoriales / Ministère de la Transition écologique.
           </li>
-          <li>L'incubateur est <a href="https://mtes-mct.github.io/portail/" title="Ministère de la Cohésion des territoires / Ministère de la Transition écologique et solidaire">Ministère de la Cohésion des territoires / Ministère de la Transition écologique et solidaire</a>.</li>
+          <li>L'incubateur est <a href="https://mtes-mct.github.io/portail/" title="Ministère de la Cohésion des territoires et des relations avec les collectivités territoriales / Ministère de la Transition écologique">Ministère de la Cohésion des territoires et des relations avec les collectivités territoriales / Ministère de la Transition écologique</a>.</li>
           <li>
             
             <a href="mailto:aides-territoires@beta.gouv.fr?subject=Aides-territoires%20sur%20fabnum">Contacter
@@ -165,14 +164,317 @@
 
     <div class="container">
       <div class="richtext">
-        <!-- raw HTML omitted -->
+        <h2 id="le-problème">Le problème</h2>
+<p>Pour près de 35 000 communes et 1 260 regroupements de communes françaises, accéder à des aides en financement et en accompagnement est essentiel, car sans aide, il n’y a pas de projets d’aménagement de territoire. C’est surtout un véritable casse-tête en raison de la myriade d’aides disponibles, puisqu’on en recense plus de 300 types, qui relèvent de différents niveaux, régional, national, et même européen : comment s’y retrouver dans ce maquis ?</p>
+<p>Des dispositifs de veille existent, mais ils sont le plus souvent construits de manière individuelle, avec des outils peu collaboratifs et à la visibilité limitée (tableur, liste de diffusion, etc). Ensuite, il faut être en mesure de sélectionner les aides les plus adaptées à son projet et de compléter les dossiers de candidature ad hoc. Des chefs de projets peuvent ainsi passer plus de deux tiers de leur temps à rechercher ces fameuses aides… alors qu’ils pourraient consacrer ce temps au projet en lui-même !</p>
+<p>Ceci engendre des situations aberrantes, avec des doutes sur l’apport réel de ces dispositifs : frustration du côté des financeurs qui n’atteindront pas leur cœur de cible, et lassitude des collectivités, n’ayant aucune garantie quand elles remplissent un dossier, si elles arrivent à cette étape.</p>
+<p>Le travail de recherche d&rsquo;aides, excessivement chronophage, est susceptible d’accentuer les inégalités entre les collectivités : dans le meilleur des cas, elles vont dédier des fiches de poste à ce duo « veille-candidature », dans le pire des cas, elles renonceront à certaines aides par méconnaissance ou manque de temps. Les aides ne bénéficient alors qu&rsquo;à celles qui peuvent consacrer des moyens importants au travail de veille, ce qui renforce la fracture territoriale française.</p>
+<h2 id="le-produit--aides-territoires">Le produit : Aides-territoires</h2>
+<p>Aides-territoires est le guichet unique des aides qui rend visibles et lisibles tous les dispositifs à destination des collectivités. Il permet à chaque agent et élu local d’identifier rapidement les aides pertinentes en effectuant une recherche territorialisée, spécifique à sa structure et aux thématiques de son projet. La veille est également automatisable via un système d’alertes email.</p>
+<p>Pour les porteurs d’aides, Aides-territoires offre une solution clé en main qui leur permet d’ajouter des dispositifs, soit manuellement depuis un espace contributeur, soit via un flux de données (API). La plateforme permet de définir de manière très granulaire la cible des dispositifs, et offre à chaque organisme porteur d’aides une vitrine personnalisée et des indicateurs de visibilité.</p>
+<p>Aides-territoires évite le re-développement de plateformes par chaque porteur d’aides et donne à toutes les collectivités un moyen efficace et centralisé de trouver les aides pour réaliser leurs projets.</p>
+<h2 id="les-premières-étapes">Les premières étapes</h2>
+<p>Si l’outil a d&rsquo;abord concerné, dans un premier temps, les aides relatives au développement et à l&rsquo;aménagement durable dans leurs diverses composantes, aujourd&rsquo;hui, Aides-territoires répertorie les aides pour toutes les thématiques de projets locaux (transition énergétique, développement économique, mobilité, etc.). De même, la plateforme couvre tous les territoires français, en métropole comme en outre-mer.</p>
+<p>Aides-territoires suit une logique de &ldquo;place de marché&rdquo; structurée selon deux profils d&rsquo;utilisateurs :</p>
+<ul>
+<li>L’offre (financements, aides en ingénierie, appels à projets) émane de nombreux acteurs : les directions générales des ministères (notamment Cohésion des Territoires et Transition écologique et solidaire) ; les agences placées sous la tutelle de l&rsquo;État (Agence De l’Environnement et de la Maîtrise de l’Énergie, Banque des territoires, Office Français pour la Biodiversité, Agence française de développement) ; les collectivités territoriales porteuses d&rsquo;aides (Conseils régionaux et départementaux, parcs naturels régionaux, pôles d&rsquo;équilibre territoriaux) ; les structures locales de l&rsquo;ingénierie (Directions départementales des territoires, Conseils d&rsquo;Architecture, d&rsquo;Urbanisme et de l'​Environnement) ; etc.</li>
+<li>La demande vient des collectivités et plus particulièrement des agents en charge de la veille sur les aides mais également de leurs partenaires locaux (associations, établissements publics) et de structures accompagnantes (DDT, PETR, etc.)</li>
+</ul>
+<h2 id="les-perspectives">Les perspectives</h2>
+<p>L’objectif est de consolider la base de données des aides européennes, nationales et locales disponibles sur Aides-territoires, en s’appuyant sur des partenariats ainsi qu&rsquo;une communauté de contributeurs constituée dans les administrations ci-dessus citées dans le but de répondre au besoin d&rsquo;exhaustivité des acteurs locaux.</p>
+<p>Dans un deuxième temps, en capitalisant les données avec lesquelles les collectivités alimentent les différents dossiers, cet outil permettra de les réutiliser (<em>Dites-le nous une fois</em>) pour faciliter le remplissage des dossiers… en proposant <em>à terme</em> un test d&rsquo;éligibilité ou encore un service de dépôt de projet en ligne.</p>
+
       </div>
     </div>
   </section>
 
   <section class="section section-grey">
     <div class="container">
+      <h1>L'équipe</h1>
       <div class="grid">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="article__author panel">
+        <div class="article__author-info">
+            <div class="article__author-name">Alexia Gazel</div>
+            <div class="article__author-role">Business developer</div>
+        </div>
+        
+<img class="screenshot" src="https://mtes-mct.github.io/portail//images/fabnum.png" title="Alexia Gazel" alt="">
+
+        <div class="article__author-description">
+            
+                
+                
+        </div>
+    </div>
+    
+    
+    
+    <div class="article__author panel">
+        <div class="article__author-info">
+            <div class="article__author-name">Anne-Lise Brouste</div>
+            <div class="article__author-role">Chargée d&#39;accompagnement</div>
+        </div>
+        
+<img class="screenshot" src="https://mtes-mct.github.io/portail//images/fabnum.png" title="Anne-Lise Brouste" alt="">
+
+        <div class="article__author-description">
+            
+                
+                
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="article__author panel">
+        <div class="article__author-info">
+            <div class="article__author-name">Elise Marion</div>
+            <div class="article__author-role">Intrapreneure / &#34;Aides-territoires&#34;</div>
+        </div>
+        
+<img class="screenshot" src="https://mtes-mct.github.io/portail//images/fabnum.png" title="Elise Marion" alt="">
+
+        <div class="article__author-description">
+            
+                <p>De la ville durable aux services numériques, toujours faire avec les usagers!</p>
+
+                
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="article__author panel">
+        <div class="article__author-info">
+            <div class="article__author-name">John Labuzan</div>
+            <div class="article__author-role">UX &amp; growth</div>
+        </div>
+        
+<img class="screenshot" src="https://mtes-mct.github.io/portail//images/fabnum.png" title="John Labuzan" alt="">
+
+        <div class="article__author-description">
+            
+                
+                
+        </div>
+    </div>
+    
+    
+    
+    <div class="article__author panel">
+        <div class="article__author-info">
+            <div class="article__author-name">Jonathan Kurtz</div>
+            <div class="article__author-role">Chargé d&#39;accompagnement</div>
+        </div>
+        
+<img class="screenshot" src="https://mtes-mct.github.io/portail//images/fabnum.png" title="Jonathan Kurtz" alt="">
+
+        <div class="article__author-description">
+            
+                
+                
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="article__author panel">
+        <div class="article__author-info">
+            <div class="article__author-name">Léa Landrieu</div>
+            <div class="article__author-role">Business developer</div>
+        </div>
+        
+<img class="screenshot" src="https://mtes-mct.github.io/portail//images/fabnum.png" title="Léa Landrieu" alt="">
+
+        <div class="article__author-description">
+            
+                
+                
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="article__author panel">
+        <div class="article__author-info">
+            <div class="article__author-name">Mathieu SOLDANO</div>
+            <div class="article__author-role">Développeur</div>
+        </div>
+        
+<img class="screenshot" src="https://mtes-mct.github.io/portail//images/fabnum.png" title="Mathieu SOLDANO" alt="">
+
+        <div class="article__author-description">
+            
+                
+                
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="article__author panel">
+        <div class="article__author-info">
+            <div class="article__author-name">Thibault Jouannic</div>
+            <div class="article__author-role">Développeur</div>
+        </div>
+        
+<img class="screenshot" src="https://mtes-mct.github.io/portail//images/fabnum.png" title="Thibault Jouannic" alt="">
+
+        <div class="article__author-description">
+            <a href="https://www.miximum.fr" target="_blank" rel="noopener">
+                <p>A choisi de devenir développeur pour changer le monde sans bouger de son fauteuil.</p>
+
+                </a>
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="article__author panel">
+        <div class="article__author-info">
+            <div class="article__author-name">Yann Boisselier</div>
+            <div class="article__author-role">Développeur</div>
+        </div>
+        
+<img class="screenshot" src="https://mtes-mct.github.io/portail//images/fabnum.png" title="Yann Boisselier" alt="">
+
+        <div class="article__author-description">
+            <a href="https://www.happy-dev-nantes.fr/" target="_blank" rel="noopener">
+                <p>Développeur spécialisé applications web : Vue.js, React, Node, API, GraphQL, REST.</p>
+
+                </a>
+        </div>
+    </div>
+    
     
 </div>
     </div>

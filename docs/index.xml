@@ -1,195 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>La Fabrique Numérique on La fabrique numérique</title>
+    <title>La Fabrique Numérique du pôle ministériel de la transition écologique et solidaire et de la cohésion des territoires on La fabrique numérique du pôle ministériel de la transition écologique et solidaire et de la cohésion des territoires</title>
     <link>https://mtes-mct.github.io/portail/</link>
-    <description>Recent content in La Fabrique Numérique on La fabrique numérique</description>
+    <description>Recent content in La Fabrique Numérique du pôle ministériel de la transition écologique et solidaire et de la cohésion des territoires on La fabrique numérique du pôle ministériel de la transition écologique et solidaire et de la cohésion des territoires</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language>
     <lastBuildDate>Wed, 28 Nov 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://mtes-mct.github.io/portail/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title></title>
-      <link>https://mtes-mct.github.io/portail/geeklunch/2016-06-20-geek-lunch-invasiv-alert/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://mtes-mct.github.io/portail/geeklunch/2016-06-20-geek-lunch-invasiv-alert/</guid>
-      <description>Présentation du projet développé pendant le hackathon #HackBioDiv par LM et ST
-Objectif : Détecter les populations invasives via les réseaux sociaux
-1. Par une utilisation via l&amp;rsquo;interface de recherche des réseaux sociaux
- Google Trends sur la recherche Frelon Asiatique : https://www.google.fr/trends/explore#q=%2Fm%2F07kf39s et une carte de France avec la localisation des recherches du terme : https://www.google.fr/trends/explore#q=/m/07kf39s&amp;amp;geo=FR Google Trends expose les résultats par entité nommée (Google Trends agrège toutes les termes de recherches qui font référence à la même chose &amp;ldquo;Frelon asiatique&amp;rdquo; ou son nom latin &amp;ldquo;vespa velutina&amp;rdquo; ou &amp;ldquo;Asian predatory wasp&amp;rdquo;).</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://mtes-mct.github.io/portail/geeklunch/2016-10-25-geek-lunch-qgis/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://mtes-mct.github.io/portail/geeklunch/2016-10-25-geek-lunch-qgis/</guid>
-      <description>Initiation à Qgis par Joël Mognol
-Objectifs :
- apprendre à faire des cartes géographiques simples sous Qgis ; connaître les pistes d&amp;rsquo;approfondissement.  Nous avons utilisé des données publiques de base (GéoFLA de l&amp;rsquo;IGN) et des données intéressant la DAM pour passer immédiatement à la pratique :
- les bases de l&amp;rsquo;interface, le chargement de données simples et une analyse thématique simple ; la mise en page d&amp;rsquo;une carte simple ; la problématique des projections avec une carte des nouvelles régions de France ; la mise en page de plusieurs cartes à la fois avec les régions de métropole et d&amp;rsquo;outre-mer ; la résolution des données avec la cartographie des ports, des pays et des océans de part le monde ; la problématique de la jointure de données attributaires et de données géographiques avec la flotte marchande par pays ; l&amp;rsquo;analyse thématique de données jointes avec le cas supra.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://mtes-mct.github.io/portail/geeklunch/2017-01-01-geek-lunch-api/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://mtes-mct.github.io/portail/geeklunch/2017-01-01-geek-lunch-api/</guid>
-      <description>Présentation API</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://mtes-mct.github.io/portail/geeklunch/2017-02-21-geek-lunch-web-semantique/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://mtes-mct.github.io/portail/geeklunch/2017-02-21-geek-lunch-web-semantique/</guid>
-      <description>Initiation au web sémantique par Olivier Garry.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://mtes-mct.github.io/portail/geeklunch/2017-02-28-geek-lunch-tps/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://mtes-mct.github.io/portail/geeklunch/2017-02-28-geek-lunch-tps/</guid>
-      <description>Présentation de TPS le service de téléprocédure simplifiée du SGMAP par CM :
- Accès au service : https://tps.apientreprise.fr Considérations générales : présentation de CM Récépissé de déclaration à la CNIL pour le traitement de données à caractère personnel par TPS Exemple de dématérialisation des demandes de création d&amp;rsquo;entreprises de transport de personne à la DRIEA : notice explicative  </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://mtes-mct.github.io/portail/geeklunch/2017-03-07-geek-lunch-geoservices_ign/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://mtes-mct.github.io/portail/geeklunch/2017-03-07-geek-lunch-geoservices_ign/</guid>
-      <description>Présentation des services de visualisation cartographique et des données de l&amp;rsquo;IGN
-Lien vers la présentation.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://mtes-mct.github.io/portail/geeklunch/2017-05-30-geek-lunch-gephi/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://mtes-mct.github.io/portail/geeklunch/2017-05-30-geek-lunch-gephi/</guid>
-      <description>Présentation de Gephi par Laurence Matringe et Luc Mathis.
-https://gephi.org
-Gephi est un logiciel de visualisation et d&amp;rsquo;exploration de graphe. Il peut par exemple vous permettre de connaître le réseau des acteurs les plus influents concernant votre politique publique. Les data visualizations exploratoires sur les liens entre les organismes du RST ont notamment été présentées à titre illustratif. La séance s&amp;rsquo;est terminée - en guise de travaux pratiques - par la représentation du jeu d&amp;rsquo;acteurs de Notre Dame des Landes à partir des données OpenData disponibles sur data.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://mtes-mct.github.io/portail/geeklunch/2017-10-16-geek-lunch-crowdsourcing_connectivite_mobile/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://mtes-mct.github.io/portail/geeklunch/2017-10-16-geek-lunch-crowdsourcing_connectivite_mobile/</guid>
-      <description>A l&amp;rsquo;heure du développement croissant de services dépendants du réseau de téléphonie mobile (ex : voiture autonome), Philippe Clopeau (ANFR) nous parle d&amp;rsquo;un projet de crowdsourcing de la connectivité mobile.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://mtes-mct.github.io/portail/geeklunch/2017-11-03-geek-lunch-opensolarmap_et_iaplu/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://mtes-mct.github.io/portail/geeklunch/2017-11-03-geek-lunch-opensolarmap_et_iaplu/</guid>
-      <description>Au programme :
-- OpenSolarMap par Christian Quest (Etalab)
-OpenSolarMap est un site web de crowdsourcing de l&amp;rsquo;orientation des toits des bâtiments, pour sélectionner les plus appropriés à la pose de panneaux solaires thermiques ou photovoltaïques. La qualification par les humains de l&amp;rsquo;orientation d&amp;rsquo;un nombre suffisant de toits pourrait permettre d&amp;rsquo;entraîner un algorithme de deeplearning pour qu&amp;rsquo;il classifie l&amp;rsquo;ensemble des toits du territoire.
-- IAPLU par Marc Léobet (MTES et MCT)</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://mtes-mct.github.io/portail/geeklunch/2017-11-30-geek-lunch-git_avec_github/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://mtes-mct.github.io/portail/geeklunch/2017-11-30-geek-lunch-git_avec_github/</guid>
-      <description>&amp;ldquo;Push ton code sur GitHub !&amp;quot;
-Si le terme logiciel de gestion de code source vous fait peur, c&amp;rsquo;est le moment de plonger. Ce geek lunch sera l&amp;rsquo;occasion de découvrir les fondamentaux - accessibles à tous - de Git. Notre intervenant est Julien Bouquillon du ministère des affaires sociales.
-Pour ceux qui ont raté la séance :
-La présentation de Julien.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://mtes-mct.github.io/portail/geeklunch/2017-12-19-geek-lunch-deep_learning/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://mtes-mct.github.io/portail/geeklunch/2017-12-19-geek-lunch-deep_learning/</guid>
-      <description>Au programme
-Le machine learning, ce n&amp;rsquo;est pas que pour les autres ! Vous n&amp;rsquo;avez pas non plus besoin d&amp;rsquo;être diplômé de Stanford pour vous y mettre. La preuve avec un exemple simple et ludique de classification automatique d&amp;rsquo;images (de chats, of course !), avec un peu de deep Learning simplifié grâce à ce Notebook en Python.
-Intervenant
-Luc Mathis (MTES/CGDD)</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://mtes-mct.github.io/portail/geeklunch/2018-01-11-geek-lunch-grep_sur_le_jorf/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://mtes-mct.github.io/portail/geeklunch/2018-01-11-geek-lunch-grep_sur_le_jorf/</guid>
-      <description>Au programme
-Nathann Cohen (CNRS) nous parlera de sa méthode d&amp;rsquo;extraction de données du JORF grâce à la commande grep et donc aux expressions régulières. Il publie notamment les données des nominations au JORF sur son site : www.steinertriples.fr.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://mtes-mct.github.io/portail/geeklunch/2018-01-26-inauguration-de-la-fabrique-num%C3%A9rique/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://mtes-mct.github.io/portail/geeklunch/2018-01-26-inauguration-de-la-fabrique-num%C3%A9rique/</guid>
-      <description>Accompagner, soutenir et porter les intrapreneurs des ministères en charge de l’écologie et des territoires : telle est la volonté de la Fabrique numérique. Inauguré le 26 janvier 2018, cet incubateur vise à aider des agents en position d&amp;rsquo;intrapreneurs à réaliser de nouveaux services numériques accessibles à tous pour transformer l’action publique et répondre aux besoins de tous les usagers d&amp;rsquo;aujourd&amp;rsquo;hui.
-L&amp;rsquo;article sur le site du ministère de la Transition écologique et solidaire</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://mtes-mct.github.io/portail/geeklunch/2018-03-08-geek-lunch-itowns/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://mtes-mct.github.io/portail/geeklunch/2018-03-08-geek-lunch-itowns/</guid>
-      <description>Picth initial
-Comment visualiser un territoire ou un phénomène spatialisé en interagissant avec des données géographiques ? Grâce à une application de géovisualisation ! Venez découvrir les recherches de l&amp;rsquo;IGN en visualisation de données géographiques, 3D, temporelles, hétérogènes, incertaines, etc. et un focus sur la plateforme iTowns.
-Présentation
-Sur Slideshare.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://mtes-mct.github.io/portail/geeklunch/2018-03-26-api-avurnavs/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://mtes-mct.github.io/portail/geeklunch/2018-03-26-api-avurnavs/</guid>
-      <description>En mer, il arrive que des événements perturbent la navigation en toute sécurité : épave, bouée disparue, phare en panne, tirs militaires etc. L&amp;rsquo;IMO (International Maritime Organization) et l&amp;rsquo;IHO (International Hydrographic Organization) imposent aux États signataires de la convention SOLAS (Safety of Life at Sea) de recenser et de diffuser les potentiels dangers à la navigation dans les eaux sous leurs responsabilités. Ces informations sont nommées navigational warnings dans les conventions internationales et « avis urgents aux navigateurs » (abrégé en AVURNAV) en France.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://mtes-mct.github.io/portail/geeklunch/2018-05-15-geek-lunch-makina_corpus/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://mtes-mct.github.io/portail/geeklunch/2018-05-15-geek-lunch-makina_corpus/</guid>
-      <description>Pitch initial Cette session a été consacrée à l&amp;rsquo;état de l&amp;rsquo;art des technologies open source pour la cartographie en matière de tuilage vectoriel. Nos intervenants travaillent chez Makina Corpus, élue entreprise Open Source de l’année au Paris Open Source Summit :
- Frédéric Bonifas, développeur carto ; Jean-Pierre Oliva, fondateur de Makina Corpus ; Olivia Duval, directrice de Makina Corpus Paris ; Simon Georges, expert Drupal et SEO.  Présentation  Makina Corpus  Société de Services en Logiciels Libres (SSLL) Développement d’applications web et mobiles (application métier, front-end, cartographie, CMS, mobile, data) Audits Formation   Tuiles Ensemble d’images de 256x256 pixels</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://mtes-mct.github.io/portail/geeklunch/2018-05-22-geek-lunch-projets-environnement-geomce/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://mtes-mct.github.io/portail/geeklunch/2018-05-22-geek-lunch-projets-environnement-geomce/</guid>
-      <description>Picth initial Cette session sera l&amp;rsquo;occasion de découvrir deux exemples concrets de services numériques que le CGDD a développé selon une méthode de design de service :
- www.projets-environnement.gouv.fr : diffusion des études d&amp;rsquo;impact environnemental aux citoyens (basé sur France Connect et www.demarches-simplifiees.fr, ex-TPS) ; GéoMCE : géolocalisation des mesures compensatoires environnementales.  Nos intervenants seront :
- Olivier Garry, conseiller numérique et design au CGDD ; Cyril Aeck, chef de projet au CP2I ; Jean-Philippe Simonnet, chef du bureau de la diffusion WEB et WEB Sémantique du CGDD.</description>
-    </item>
     
     <item>
       <title></title>
@@ -238,6 +58,25 @@ Sur Slideshare.</description>
     
     <item>
       <title></title>
+      <link>https://mtes-mct.github.io/portail/people/brigitte.loubet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mtes-mct.github.io/portail/people/brigitte.loubet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://mtes-mct.github.io/portail/people/christophe.benard/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mtes-mct.github.io/portail/people/christophe.benard/</guid>
+      <description>fullname: Christophe BENARD role: Développeur github: ch-benard missions:
+ start: 2020-09-01 end: 2021-09-30 status: admin employer: MTES-MCT avatar: startups: resorption-bidonvilles   </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://mtes-mct.github.io/portail/people/christophe.riboulet/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -274,6 +113,15 @@ Sur Slideshare.</description>
     
     <item>
       <title></title>
+      <link>https://mtes-mct.github.io/portail/people/dominique.lequepeys/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mtes-mct.github.io/portail/people/dominique.lequepeys/</guid>
+      <description>Coach startupOrpailleur du service public…en quête de pépites !</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://mtes-mct.github.io/portail/people/elias.boukamza/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -292,6 +140,15 @@ Sur Slideshare.</description>
     
     <item>
       <title></title>
+      <link>https://mtes-mct.github.io/portail/people/emeric.vercoutre/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mtes-mct.github.io/portail/people/emeric.vercoutre/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://mtes-mct.github.io/portail/people/emile.ledure/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -305,6 +162,15 @@ Sur Slideshare.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mtes-mct.github.io/portail/people/emmanuel.flahaut/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://mtes-mct.github.io/portail/people/fabien.vauclair/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mtes-mct.github.io/portail/people/fabien.vauclair/</guid>
       <description></description>
     </item>
     
@@ -382,6 +248,24 @@ Sur Slideshare.</description>
     
     <item>
       <title></title>
+      <link>https://mtes-mct.github.io/portail/people/henry.ciesielski/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mtes-mct.github.io/portail/people/henry.ciesielski/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://mtes-mct.github.io/portail/people/imane.nahmed/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mtes-mct.github.io/portail/people/imane.nahmed/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://mtes-mct.github.io/portail/people/jacob.carbonel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -450,6 +334,15 @@ Sur Slideshare.</description>
       
       <guid>https://mtes-mct.github.io/portail/people/julien.dreher/</guid>
       <description>Coach qui aide à comprendre la logique des réseaux</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://mtes-mct.github.io/portail/people/julien.falxa/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mtes-mct.github.io/portail/people/julien.falxa/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -629,7 +522,7 @@ Sur Slideshare.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mtes-mct.github.io/portail/people/raphael.yharrassarry/</guid>
-      <description>​ Designer de chaos depuis le dernier milléanire.</description>
+      <description>Lead UX Designer depuis le dernier millénaire.</description>
     </item>
     
     <item>
@@ -742,6 +635,15 @@ Sur Slideshare.</description>
     
     <item>
       <title></title>
+      <link>https://mtes-mct.github.io/portail/people/vincent.maubert/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mtes-mct.github.io/portail/people/vincent.maubert/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://mtes-mct.github.io/portail/people/yann.boisselier/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -760,11 +662,11 @@ Sur Slideshare.</description>
     </item>
     
     <item>
-      <title>Access4all</title>
-      <link>https://mtes-mct.github.io/portail/startup/access4all/</link>
+      <title>Acceslibre</title>
+      <link>https://mtes-mct.github.io/portail/startup/acceslibre/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://mtes-mct.github.io/portail/startup/access4all/</guid>
+      <guid>https://mtes-mct.github.io/portail/startup/acceslibre/</guid>
       <description>Le problème : Le manque d’information sur l’accessibilité des lieux Quels sont vos critères pour choisir un restaurant ? Recommandation, proximité, prix, type de cuisine… Vous avez de la chance parce que 12 millions de Français soit 20% de la population ne se posent jamais ces questions. Il s’agit des personnes en situation de handicap. Elles, se demandent plutôt : Vais-je pouvoir franchir la porte ? Vais-je pouvoir stationner à proximité ?</description>
     </item>
     
@@ -784,7 +686,7 @@ Aujourd’hui, les exploitants transmettent les résultats de surveillance des r
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mtes-mct.github.io/portail/startup/aides-territoires/</guid>
-      <description>Le problème Pour près de 35 000 communes et 1 260 regroupements de communes françaises, accéder à des aides en financement, en accompagnement, ou à des appels à projets est essentiel, car sans aide, il n’y a pas de projets d’aménagement de territoire. C’est surtout un véritable casse-tête en raison de la myriade d’aides disponibles, puisqu’on en recense plus de 300 types, qui relèvent de différents niveaux, régional, national, et même européen : comment s’y retrouver dans ce maquis ?</description>
+      <description>Le problème Pour près de 35 000 communes et 1 260 regroupements de communes françaises, accéder à des aides en financement et en accompagnement est essentiel, car sans aide, il n’y a pas de projets d’aménagement de territoire. C’est surtout un véritable casse-tête en raison de la myriade d’aides disponibles, puisqu’on en recense plus de 300 types, qui relèvent de différents niveaux, régional, national, et même européen : comment s’y retrouver dans ce maquis ?</description>
     </item>
     
     <item>
@@ -794,6 +696,16 @@ Aujourd’hui, les exploitants transmettent les résultats de surveillance des r
       
       <guid>https://mtes-mct.github.io/portail/startup/assec/</guid>
       <description>Le problème de la gestion de la sécheresse Lors d’un épisode de sécheresse, les ressources en eau baissent jusqu’à ne plus satisfaire tous les besoins des particuliers, industriels et agriculteurs. L’État partage alors la ressource restante. En 2017, 85 départements ont été concernés. Avec le changement climatique à l’œuvre, ces situations deviennent plus fréquentes. Dans chaque département, la gestion de la sécheresse mobilise des agents de l’État chargés de mesures hydrométriques, de rédiger des arrêtés préfectoraux et d’en contrôler la bonne application.</description>
+    </item>
+    
+    <item>
+      <title>Bati-Amiante</title>
+      <link>https://mtes-mct.github.io/portail/startup/bati-amiante/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mtes-mct.github.io/portail/startup/bati-amiante/</guid>
+      <description>100.000 morts d’ici 2050 Interdit seulement depuis 1997, on estime qu’environ 20 millions de tonnes d’amiante sont encore présentes dans les bâtiments. Malheureusement les risques pour la santé sont croissants, car c’est un matériau qui se dégrade au fil du temps et qui nécessite une surveillance constante. Selon Santé Publique France, l’amiante pourrait causer 100.000 décès d’ici 2050 et 1,5 milliards d&amp;rsquo;euros par an.
+A ce jour le risque est très mal géré.</description>
     </item>
     
     <item>
@@ -815,6 +727,15 @@ Dès le projet esquissé, un véritable calvaire commence et se répète ensuite
       <description>Les biocarburants, utilisés comme substituts aux carburants fossiles, permettent de réduire de plus de 4% les émissions de gaz à effet de serre du transport en France.
 D’un point de vue technique, on distingue trois générations de biocarburants selon l’origine de la biomasse utilisée (matière organique d’origine végétale, animal, résidus ou déchet ou microalgue).
 La réglementation des biocarburants s’effectue en fonction de la nature de la matière première utilisée. Les biocarburants conventionnels élaborés à partir de matières premières en concurrence avec l’alimentaire et les biocarburants avancés élaborés à partir d’autres matières premières et doivent respecter des critères de durabilité : réduire les émissions de gaz à effet de serre sur l’ensemble de leur cycle de vie d’au moins 50% et ne pas provenir de terres déforestées.</description>
+    </item>
+    
+    <item>
+      <title>Chauffage-Urbain</title>
+      <link>https://mtes-mct.github.io/portail/startup/chauffage-urbain/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mtes-mct.github.io/portail/startup/chauffage-urbain/</guid>
+      <description>Encore trop de chauffages collectifs aux énergies fossiles En Ile-de-France, le chauffage résidentiel et tertiaire est assuré à 65% par des énergies fossiles et seulement à 11% par le chauffage urbain. Or, le ce mode de chauffage émet, dans notre région, 2 fois moins de gaz à effet de serre que le fioul et 50 % de moins que le gaz (source SNCU). Le raccordement d’un logement fioul sur un réseau de chaleur équivaut à la suppression d’une voiture !</description>
     </item>
     
     <item>
@@ -876,6 +797,15 @@ Jusqu&amp;rsquo;à présent, ce document est rédigé sur papier en plusieurs ex
       <guid>https://mtes-mct.github.io/portail/startup/kelrisks/</guid>
       <description>La pollution des sols : un risque invisible mais bien réel En 2017 près d’un million de transactions foncières ont été opérées. Qu’un projet immobilier soit porté par un particulier, par une société ou une collectivité, il engage l’investisseur sur le long terme et doit être pour cette raison parfaitement sécurisé.
 Parmi les risques qui pèsent sur le succès du projet, l’éventuelle présence de pollutions dans les sols est probablement un des plus complexes à appréhender : la pollution ne se voit pas, elle contraint l’utilisation du terrain et, surtout, sa découverte tardive peut entraîner pour l’acquéreur des conséquences lourdes en termes financiers (surcoût de construction lié à la dépollution), juridiques (responsabilité du vendeur au titre des vices cachés) voire sanitaires (exposition des habitants aux pollutions).</description>
+    </item>
+    
+    <item>
+      <title>Mes autorisations de stationnement</title>
+      <link>https://mtes-mct.github.io/portail/startup/mesads/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mtes-mct.github.io/portail/startup/mesads/</guid>
+      <description>Problème investigué A ce jour, les 12 000 gestionnaires d&amp;rsquo;autorisations de stationnement de taxis (ADS) ne disposent d’aucun outil informatique dédié pour tenir à jour un registre des ADS délivrées, à l’exception des plus importantes d’entre elles (préfecture de police de Paris, métropole de Lyon et ville de Marseille). Le recensement des ADS de 2016, piloté par la DSCR, a permis de mettre en lumière des pratiques archaïques (tenu de registres manuscrits) et des anomalies dans la gestion des ADS (ADS en exploitation non connues par les gestionnaires, ADS non exploitées, absence d’arrêtés pour l’attribution des ADS, etc.</description>
     </item>
     
     <item>

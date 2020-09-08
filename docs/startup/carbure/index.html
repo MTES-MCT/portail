@@ -7,6 +7,7 @@
     <title>Fabrique numérique - MTES-MCT</title>
   
     <link rel="stylesheet" href="https://mtes-mct.github.io/portail//css/template.css">
+    <link rel="stylesheet" href="https://mtes-mct.github.io/portail//css/tile.css">
     <link rel="stylesheet" href="https://mtes-mct.github.io/portail//css/grid.css">
     <link rel="stylesheet" href="https://mtes-mct.github.io/portail//css/authors-grid.css">
     <link rel="stylesheet" href="https://mtes-mct.github.io/portail//css/home.css">
@@ -103,8 +104,6 @@
             <ul class="nav__links">
                 <li class="nav__item"><a href="https://mtes-mct.github.io/portail//startup">Startups</a></li>
                 <li class="nav__item"><a href="https://mtes-mct.github.io/portail//people">Communauté</a></li>
-                <li class="nav__item"><a href="https://mtes-mct.github.io/portail//geeklunch">Geek Lunch</a></li>
-                <li class="nav__item"><a href="https://mtes-mct.github.io/portail//data">Données</a></li>
                 <li class="nav__item"><a href="https://mtes-mct.github.io/portail//ressources">Ressources</a></li>
             </ul>
         </nav>
@@ -130,7 +129,7 @@
     </div>
   </section>
 
-  <div class="notification full-width">Le produit est en <em>construction</em>.</div>
+  <div class="notification full-width">Le produit est en <em></em>.</div>
 
 
   <section class="section section-white">
@@ -165,14 +164,218 @@
 
     <div class="container">
       <div class="richtext">
-        <!-- raw HTML omitted -->
+        <p>Les biocarburants, utilisés comme substituts aux carburants fossiles, permettent de réduire de plus de 4% les émissions de gaz à effet de serre du transport en France.</p>
+<p>D’un point de vue technique, on distingue trois générations de biocarburants selon l’origine de la biomasse utilisée (matière organique d’origine végétale, animal, résidus ou déchet ou microalgue).</p>
+<p>La réglementation des biocarburants s’effectue en fonction de la nature de la matière première utilisée. Les biocarburants conventionnels élaborés à partir de matières premières en concurrence avec l’alimentaire et les biocarburants avancés élaborés à partir d’autres matières premières et doivent respecter des critères de durabilité : réduire les émissions de gaz à effet de serre sur l’ensemble de leur cycle de vie d’au moins 50% et ne pas provenir de terres déforestées.</p>
+<p>En France, l’incorporation de biocarburants dans les carburants est réglementée au moyen de la Taxe Incitative Relative à l’Incorporation de Biocarburants (TIRIB) pour obliger les opérateurs pétrolier à incorporer des biocarburants dans les carburants fossiles. En 2020, l’objectif d’incorporation est de 8% de biocarburants dans les carburants fossiles. Un opérateur ne paye pas la TIRIB s’il rempli l’objectif et peut revendre l’incorporation excédentaire à un opérateur n’ayant pas atteint l’objectif (pour un prix inférieur à ce que leur aurait coûté la TIRIB).</p>
+<h2 id="les-problèmes-actuels">Les problèmes actuels</h2>
+<p>Aujourd’hui, les biocarburants doivent justifier leur durabilité pour être valables: ils doivent impérativement :</p>
+<ul>
+<li>Réduire les émissions de Gaz à effet de serre par rapports aux carburants fossiles</li>
+<li>Ne pas provenir de terres déforestées</li>
+</ul>
+<p>Les biocarburants sont produits dans des bioraffineries à partir de matières premières dites « durables ». Lors de leur incorporation dans les carburants fossiles (dans les dépôts pétroliers), l’opérateur déclare les lots incorporés à la Direction Générale de l’Énergie et du Climat (DGEC) pour justifier leur durabilité. En tout, plus de 40 000 lots (4 milliards de litres) sont déclarés par an. Après incorporation, l’opérateur bénéficie d’un certificat d’incorporation, qu’il peut vendre à d’autres opérateurs pour l’atteinte des objectifs d’incorporation : les flux physiques sont alors déconnectés des flux administratifs. Ce certificat, au format papier, est utilisé lors de la déclaration des opérateurs aux services des douanes pour justifier le taux d’incorporation et ainsi éviter de payer la TIRIB.</p>
+<p>Cependant, le système de déclaration de durabilité de la DGEC et de déclaration aux douanes ne communiquent pas directement, ce qui complique les contrôles. Le marché des certificats étant complètement détaché du marché physique, cela pose des questions sur la traçabilité.</p>
+<p>De plus, il existe une forte pression sur les matières premières les plus durables, notamment les déchets et résidus, les gisements étant rares et les avantages fiscaux associés à leur utilisation étant particulièrement intéressants. À défaut de contrôles assez fiables, il peut donc y avoir de la fraude : des opérateurs faisant passer des lots non durables comme durable afin de remplir leurs objectifs d’incorporation de biocarburants.
+Nous avons donc un système archaïque et particulièrement lourd à gérer pour l’ensemble des opérateurs, complexifiant l’analyse des données et les contrôles.</p>
+<h2 id="le-produit--carbure">Le produit : CarbuRe</h2>
+<p>CarbuRe est une plateforme permettant de suivre l’ensemble des flux de biocarburants et de relier directement et simplement les flux physiques aux flux administratifs. Cela permet de fiabiliser les données, sécuriser les approvisionnements et diminuer les risques de fraudes.</p>
+<h2 id="les-premières-étapes">Les premières étapes</h2>
+<p>Dans un premier temps, nous allons créer la base de donnée avec les fonctionnalités de base associées:</p>
+<ul>
+<li>Interface de saisie de l’information pour permettre aux producteurs de biocarburants d’intégrer leurs informations dans la base de donnée.</li>
+<li>Historique des informations saisies</li>
+<li>Affiliation à un opérateur pétrolier</li>
+<li>Extraction de données</li>
+</ul>
+<h3 id="périmètre-de-test">Périmètre de test</h3>
+<p>Création de donnée par les producteurs jusqu’à la récupération par les opérateurs pétroliers.</p>
+<h3 id="et-ensuite">Et ensuite?</h3>
+<p>Élargissement de la base pour faire le lien avec les douanes, et pour intégrer les échanges entre opérateurs.</p>
+
       </div>
     </div>
   </section>
 
   <section class="section section-grey">
     <div class="container">
+      <h1>L'équipe</h1>
       <div class="grid">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="article__author panel">
+        <div class="article__author-info">
+            <div class="article__author-name">Julien Falxa</div>
+            <div class="article__author-role">Développeur</div>
+        </div>
+        
+<img class="screenshot" src="https://mtes-mct.github.io/portail//images/fabnum.png" title="Julien Falxa" alt="">
+
+        <div class="article__author-description">
+            <a href="https://github.com/jfalxa" target="_blank" rel="noopener">
+                
+                </a>
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="article__author panel">
+        <div class="article__author-info">
+            <div class="article__author-name">Martin Planès</div>
+            <div class="article__author-role">Développeur</div>
+        </div>
+        
+<img class="screenshot" src="https://mtes-mct.github.io/portail//images/fabnum.png" title="Martin Planès" alt="">
+
+        <div class="article__author-description">
+            <a href="https://github.com/mplanes" target="_blank" rel="noopener">
+                
+                </a>
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
 </div>
     </div>
