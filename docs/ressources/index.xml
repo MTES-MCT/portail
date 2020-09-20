@@ -5,10 +5,6 @@
     <link>https://mtes-mct.github.io/portail/ressources/</link>
     <description>Recent content in Ressources digitales on La fabrique numérique du pôle ministériel de la transition écologique et solidaire et de la cohésion des territoires</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>fr-FR</language>
-    
-	<atom:link href="https://mtes-mct.github.io/portail/ressources/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>fr-FR</language><atom:link href="https://mtes-mct.github.io/portail/ressources/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
