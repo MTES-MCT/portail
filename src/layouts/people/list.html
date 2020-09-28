@@ -1,20 +1,50 @@
 {{ define "main" }}
 <main id="main">
-<div class="page article" id="presentation">
-    {{ partial "hero-page.html" . }}
-</div>
-
-<section class="documentation">
-    <div class="main-pane">
-        <div class="markdown">
-            {{ .Content }}
-        </div>
-        <div class="grid">
-            {{ range (.Pages.ByParam "status")}}
-            {{ partial "people/card-community.html" . }}
-            {{ end }}
-        </div>
+    <div class="page article" id="presentation">
+        {{ partial "hero-page.html" . }}
     </div>
-</section>
+
+    <section class="documentation">
+        <div class="main-pane">
+            <div class="markdown">
+                {{ .Content }}
+            </div>
+            <section class="section section-grey">
+                <div class="container community">
+                    <h1>qui fabriquent</h1>
+                    <div class="grid">
+                        {{ range .Pages }}
+                        {{ $people := . }}
+                        {{ with .Params.missions }}
+                        {{ range last 1 . }}
+                        {{ $mission := . }}
+                        {{ if or ( eq $mission.end nil) (and (ne $mission.end nil) (gt (time $mission.end) now)) }}
+                        {{ partial "people/card-community.html" $people }}
+                        {{ end }}
+                        {{ end }}
+                        {{ end }}
+                        {{ end }}
+                    </div>
+                </div>
+            </section>
+            <section class="section section-white">
+                <div class="container community alumni">
+                    <h1>qui ont fabriqué</h1>
+                    <div class="grid">
+                        {{ range .Pages }}
+                        {{ $people := . }}
+                        {{ with .Params.missions }}
+                        {{ range last 1 . }}
+                        {{ $mission := . }}
+                        {{ if and (ne $mission.end nil) (lt (time $mission.end) now) }}
+                        {{ partial "people/card-community.html" $people }}
+                        {{ end }}
+                        {{ end }}
+                        {{ end }}
+                        {{ end }}
+                    </div>
+                </div>
+            </section>
+    </section>
 </main>
 {{ end }}
