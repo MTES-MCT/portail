@@ -74,6 +74,10 @@ jobs:
                 find $BETAGOUV/img/authors/ -type f -name "$author.*" -exec cp {} src/static/images/people/ \;
               done < $LIST_RESULTS/authors.txt
       - run:
+          name: Copy phases from betagouv to phases in repo
+          command: |
+                cp -r $BETAGOUV/content/_phases/. src/content/phases
+      - run:
           name: Deploy to repo
           command: |
             git config credential.helper 'cache --timeout=120'

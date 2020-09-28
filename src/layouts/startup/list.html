@@ -1,20 +1,32 @@
 {{ define "main" }}
 <main id="main">
-<div class="page article" id="presentation">
-    {{ partial "hero-page.html" . }}
-</div>
+    <div class="page article" id="presentation">
+        {{ partial "hero-page.html" . }}
+    </div>
 
-<section class="documentation">
-    <div class="main-pane">
-        <div class="markdown">
-            {{ .Content }}
-        </div>
-        <div class="grid">
-            {{ range (.Pages.ByParam "status")}}
-            {{ partial "startup/card.html" . }}
+    <section class="documentation">
+        <div class="main-pane">
+            <div class="markdown">
+                {{ .Content }}
+            </div>
+            {{ $phases := (where .Site.RegularPages "Section" "==" "phases").ByParam "order" }}
+            {{ $startups := .Pages }}
+            {{ range $phases }}
+            {{ $status := .Params.status }}
+            <h1>En {{ lower .Params.Label }}</h1>
+            <div class="grid">
+                {{ range $startups }}
+                {{ $startup := . }}
+                {{ range last 1 .Params.phases }}
+                {{ $lastPhase := .name }}
+                {{ if eq $status $lastPhase }}
+                {{ partial "startup/card.html" $startup }}
+                {{ end }}
+                {{ end }}
+                {{ end }}
+            </div>
             {{ end }}
         </div>
-    </div>
-</section>
+    </section>
 </main>
 {{ end }}

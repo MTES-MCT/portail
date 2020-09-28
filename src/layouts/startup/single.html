@@ -9,7 +9,7 @@
     </div>
   </section>
 
-  <div class="notification full-width">Le produit est en <em>{{ .Params.status }}</em>.</div>
+  <div class="notification full-width">Le produit est en <em>{{ range last 1 .Params.phases }}{{ .name }}{{ end }}</em>.</div>
 
 
   <section class="section section-white">
