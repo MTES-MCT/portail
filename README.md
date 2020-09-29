@@ -23,7 +23,7 @@ hugo server -s src/
 
 When you `git push` your changes, circleci:
 
-* imports people and startups from [beta.gouv.fr](https://github.com/betagouv/beta.gouv.fr)
+* imports people, startups and phases from [beta.gouv.fr](https://github.com/betagouv/beta.gouv.fr)
 
 * builds the static website
 
@@ -31,8 +31,8 @@ When you `git push` your changes, circleci:
 
 ## Add content
 
-In [src/content](src/content) directory, you change or add markdown files, except people and startups.
+In [src/content](src/content) directory, you change or add markdown files, except people, startups and phases.
 
-People and startups are automatically imported from beta.gouv.fr.
+People, startups and phases are automatically imported from beta.gouv.fr.
 
 If you want to add a person or a startup, you have to make a PR in [beta.gouv.fr](https://github.com/betagouv/beta.gouv.fr) repository.
