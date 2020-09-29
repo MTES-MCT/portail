@@ -1,56 +1,93 @@
 {{ define "main" }}
 
 <div class="hero article__hero">
-    <div class="hero__container">
-      
-        <img src="{{ .Site.BaseURL }}/images/fabrique-numérique_AB.jpg" alt="Nous créons des services publics numériques" />
-      
-      <div class="article__container" style="text-align: center;">
-        <h1 class="article__title">{{ .Title }}</h1>
-      </div>
+  <div class="hero__container">
+
+    <img src="{{ .Site.BaseURL }}/images/fabrique-numérique_AB.jpg" alt="Nous créons des services publics numériques" />
+
+    <div class="article__container" style="text-align: center;">
+      <h1 class="article__title">{{ .Title }}</h1>
     </div>
   </div>
+</div>
 
-  <section class="section section">
-    <div class="container">
-      <div class="column">
-        {{ .Content }}
-      </div>
+<section class="section section">
+  <div class="container">
+    <div class="column">
+      {{ .Content }}
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="section section-grey">
-    <div class="container">
-      <div class="tiles">
-        <h1>Statistiques</h1>
-        <div class="grid">
-          <div class="tile tile-colored">
-            {{ $startups := (where .Site.RegularPages "Section" "==" "startup") }}
-            {{ $startupsCount := len $startups }}
-            <h1>{{ $startupsCount }}</h1>
-            <h3>Startups d'État</h3>
-          </div>
-          <div class="tile tile-colored">
-            {{ $people := (where .Site.RegularPages "Section" "==" "people") }}
-            {{ $peopleCount := len $people }}
-            <h1>{{ $peopleCount }}</h1>
-            <h3>Personnes</h3>
-          </div>
-          <div class="tile tile-colored">
-            {{ $intras := (where (where .Site.RegularPages "Section" "==" "people") "Params.role" "==" "Intrapreneur" ) }}
-            {{ $intrasCount := len $intras }}
-            <h1>{{ $intrasCount }}</h1>
-            <h3>Intrapreneurs</h3>
-          </div>
-          <div class="tile tile-colored">
-            {{ $devs := (where (where .Site.RegularPages "Section" "==" "people") "Params.role" "==" "Développeur" ) }}
-            {{ $devsCount := len $devs }}
-            <h1>{{ $devsCount }}</h1>
-            <h3>Développeurs</h3>
-          </div>
+<section class="section section-grey">
+  <div class="container">
+    <div class="tiles">
+      <h1>Statistiques</h1>
+      <div class="grid">
+        <div class="tile tile-colored">
+          {{ $startups := (where .Site.RegularPages "Section" "==" "startup") }}
+          {{ $startupsActives := 0 }}
+          {{ range $startups }}
+          {{ range last 1 .Params.phases }}
+          {{ $lastPhase := .name }}
+          {{ if ne "alumni" $lastPhase }}
+          {{ $startupsActives = add $startupsActives 1 }}
+          {{ end }}
+          {{ end }}
+          {{ end }}
+          <h1>{{ $startupsActives }}</h1>
+          <h3>Startups d'État actives</h3>
+        </div>
+        <div class="tile">
+          {{ $startups := (where .Site.RegularPages "Section" "==" "startup") }}
+          {{ $startupsPassees := 0 }}
+          {{ range $startups }}
+          {{ range last 1 .Params.phases }}
+          {{ $lastPhase := .name }}
+          {{ if eq "alumni" $lastPhase }}
+          {{ $startupsPassees = add $startupsPassees 1 }}
+          {{ end }}
+          {{ end }}
+          {{ end }}
+          <h1>{{ $startupsPassees }}</h1>
+          <h3>Startups d'État passées</h3>
+        </div>
+        <div class="tile tile-colored">
+          {{ $people := (where .Site.RegularPages "Section" "==" "people") }}
+          {{ $peopleActuels := 0 }}
+          {{ range $people }}
+          {{ with .Params.missions }}
+          {{ range last 1 . }}
+          {{ $mission := . }}
+          {{ if or ( eq $mission.end nil) (and (ne $mission.end nil) (gt (time $mission.end) now)) }}
+          {{ $peopleActuels = add $peopleActuels 1 }}
+          {{ end }}
+          {{ end }}
+          {{ end }}
+          {{ end }}
+          <h1>{{ $peopleActuels }}</h1>
+          <h3>Faiseurs actuels</h3>
+        </div>
+        <div class="tile">
+          {{ $people := (where .Site.RegularPages "Section" "==" "people") }}
+          {{ $peopleAnciens := 0 }}
+          {{ range $people }}
+          {{ with .Params.missions }}
+          {{ range last 1 . }}
+          {{ $mission := . }}
+          {{ if and (ne $mission.end nil) (lt (time $mission.end) now) }}
+          {{ $peopleAnciens = add $peopleAnciens 1 }}
+          {{ end }}
+          {{ end }}
+          {{ end }}
+          {{ end }}
+          <h1>{{ $peopleAnciens }}</h1>
+          <h3>Anciens faiseurs</h3>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+  </div>
+</section>
 
 {{ end }}
