@@ -13,17 +13,20 @@
             {{ $startups := .Pages }}
             {{ range $phases }}
             {{ $status := .Params.status }}
-            <h1>En {{ lower .Params.Label }}</h1>
-            <div class="grid">
-                {{ range $startups }}
-                {{ $startup := . }}
-                {{ range last 1 .Params.phases }}
-                {{ $lastPhase := .name }}
-                {{ if eq $status $lastPhase }}
-                {{ partial "startup/card.html" $startup }}
-                {{ end }}
-                {{ end }}
-                {{ end }}
+            <div id="{{ $status }}" style="padding-top: 4em;">
+                <h2 class="phase-title">En {{ lower .Params.Label }}</h2>
+                <p class="phase-description">{{ .Params.short_description }}.</p>
+                <div class="grid">
+                    {{ range $startups }}
+                    {{ $startup := . }}
+                    {{ range last 1 .Params.phases }}
+                    {{ $lastPhase := .name }}
+                    {{ if eq $status $lastPhase }}
+                    {{ partial "startup/card.html" $startup }}
+                    {{ end }}
+                    {{ end }}
+                    {{ end }}
+                </div>
             </div>
             {{ end }}
         </div>

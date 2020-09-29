@@ -3,4 +3,4 @@ title: Communauté
 date: 2018-11-28
 ---
 
-### Les personnes
+### La communauté de la fabrique numérique

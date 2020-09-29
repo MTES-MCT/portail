@@ -1,6 +1,6 @@
 ---
-title: La Fabrique Numérique du pôle ministériel de la transition écologique et de la cohésion des territoires
-owner: Ministère de la Transition Écologique - Ministère de la Cohésion des Territoires
+title: La Fabrique Numérique du pôle ministériel de la transition écologique et de la cohésion des territoires et des relations avec les collectivités territoriales
+owner: Ministère de la Transition Écologique - Ministère de la Cohésion des Territoires et des Relations avec les Collectivités Territoriales
 website: https://mtes-mct.github.io/portail
 github: https://github.com/MTES-MCT/
 contact: mailto:samuel.goldszmidt@beta.gouv.fr?subject=Incubateurs
