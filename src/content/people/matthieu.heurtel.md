@@ -4,7 +4,7 @@ role: Intrapreneur
 avatar: https://avatars3.githubusercontent.com/Mhrtl?s=600
 missions:
   - start: 2018-01-01
-    end: 2020-12-31
+    end:
     status: admin
     employer: MTES/MCT
 startups:
