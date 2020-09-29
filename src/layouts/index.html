@@ -28,7 +28,7 @@
             {{ $startups := (where .Site.RegularPages "Section" "==" "startup") }}
             {{ $startupsCount := len $startups }}
             <h1>{{ $startupsCount }}</h1>
-            <h3>Startups</h3>
+            <h3>Startups d'État</h3>
           </div>
           <div class="tile tile-colored">
             {{ $people := (where .Site.RegularPages "Section" "==" "people") }}
