@@ -4,7 +4,7 @@ title: Ressources digitales
 
 ## Internes
 
-* Un [guide](https://fabrique-numerique-mte-mct.gitbook.io/guide/) pour la communauté de la fabrique numérique.
+* Un [guide](https://fabrique-numerique.gitbook.io/guide/) pour la communauté de la fabrique numérique.
 * Un [guide](https://doc.incubateur.net) pour la communauté beta.gouv.fr.
 
 ## Externes
