@@ -4,6 +4,7 @@ mv src/docs .
 git config credential.helper 'cache --timeout=120'
 git config user.email "<circleci>"
 git config user.name "CircleCi"
+git pull origin
 status=$(git status -s)
 empty=''
 if [ "$status" = "$empty" ]; then 
