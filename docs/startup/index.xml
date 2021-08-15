@@ -70,7 +70,7 @@ En échange de l’ouverture du droit à l’APL pour les locataires des logemen
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mtes-mct.github.io/portail/startup/atlas-des-paysages/</guid>
-      <description>Contexte La prise en compte du paysage dans les projets d’aménagement a une assise juridique censée la rendre obligatoire, mais pas contraignante :
+      <description>Phase d&amp;rsquo;investigation Contexte La prise en compte du paysage dans les projets d’aménagement a une assise juridique censée la rendre obligatoire, mais pas contraignante :
  principes de la Convention Européenne du Paysage du Conseil de l’Europe codes de l’environnement et de l’urbanisme  L’Atlas de paysages est l’outil fondamental de la connaissance des paysages, mis à la disposition des acteurs publics et privés à l’échelle départementale, sous forme de fichiers pdf de plusieurs centaines de pages.</description>
     </item>
     
@@ -290,6 +290,16 @@ S’appuyant sur des expériences locales réussies à Strasbourg et Toulouse, l
     </item>
     
     <item>
+      <title>SPARTE</title>
+      <link>https://mtes-mct.github.io/portail/startup/sparte/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mtes-mct.github.io/portail/startup/sparte/</guid>
+      <description>Contexte La Loi Climat &amp;amp; Résilience en cours d’amendement va sans doute conduire les collectivités à :
+ viser l’objectif de zéro artificialisation nette d’ici 2050, réduire par 2 le rythme de l’artificialisation des sols d’ici 2030, réaliser un bilan d’artificialisation annuel ou bi-annuel de leur territoire.  Ces objectifs vont se traduire dans les documents de planification et d’urbanisme à différents niveaux : régional (SRADDET), territorial (SCoT) et inter-communal (PLUi).</description>
+    </item>
+    
+    <item>
       <title>Trackdéchets</title>
       <link>https://mtes-mct.github.io/portail/startup/trackdechets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -310,14 +320,22 @@ Transport.data.gouv.fr a pour mission de faciliter les déplacements des usagers
     </item>
     
     <item>
+      <title>Wikicarbone</title>
+      <link>https://mtes-mct.github.io/portail/startup/wikicarbone/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mtes-mct.github.io/portail/startup/wikicarbone/</guid>
+      <description>Contexte Mise en place de l&amp;rsquo;affichage environnemental</description>
+    </item>
+    
+    <item>
       <title>Zéro logement vacant</title>
       <link>https://mtes-mct.github.io/portail/startup/zero-logement-vacant/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mtes-mct.github.io/portail/startup/zero-logement-vacant/</guid>
-      <description>Le problème 1,1 million de logements sont vacants depuis au moins deux ans dans le parc privé. La remise sur le marché de ces logements permettrait de redynamiser les territoires détendus, de constituer une offre abordable complémentaire au parc social dans les territoires tendus et de se substituer à la construction neuve de logements par artificialisation des sols.
-Historiquement, la lutte contre la vacance s’est principalement appuyée sur :
- des outils coercitifs (taxe sur la vacance, réquisition) qui se sont révélés insuffisants parce que peu activables pour les collectivités.</description>
+      <description>Voir la politique de confidentialité → Le problème 1,1 million de logements sont vacants depuis au moins deux ans dans le parc privé. La remise sur le marché de ces logements permettrait de redynamiser les territoires détendus, de constituer une offre abordable complémentaire au parc social dans les territoires tendus et de se substituer à la construction neuve de logements par artificialisation des sols.
+Historiquement, la lutte contre la vacance s’est principalement appuyée sur :</description>
     </item>
     
   </channel>
