@@ -1,7 +1,8 @@
 ---
 title: Mission Transition Ecologique
 mission: Faciliter la transition écologique des PME-ETI
-owner: Commissariat général au développement durable (CGDD)
+sponsors:
+    - /organisations/cgdd
 incubator: mtes
 phases:
   - name: investigation
@@ -17,6 +18,8 @@ redirect_from:
   - /startups/mission-transition
 stats: false
 contact: france-transition@beta.gouv.fr
+usertypes:
+  - entreprise
 ---
 
 ## Le problème

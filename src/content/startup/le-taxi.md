@@ -1,12 +1,8 @@
 ---
 title: Le Taxi
 mission: Commander un taxi, rapidement
-owner: DGITM
 sponsors:
-    - name: Direction generale des Infrastructures, des Transports et de la Mer
-      acronym: DGITM
-      domaine_ministeriel: environnement
-      type: administration-centrale
+  - /organisations/dgitm
 incubator: mtes
 phases:
   - name: investigation
@@ -21,6 +17,11 @@ stats: true
 contact: ishan.bhojwani@beta.gouv.fr
 redirect_from:
   - /startups/taxi
+usertypes:
+  - particulier
+  - entreprise
+dashlord_url: https://mtes-mct.github.io/dashlord/url/le-taxi/
+accessibility_status: non conforme
 ---
 
 Le Taxi, c'est plus de 50 000 chauffeurs en France, partout sur le territoire, de la plus petite commune à la plus grande métropole.

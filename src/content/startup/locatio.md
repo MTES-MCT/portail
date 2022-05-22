@@ -1,13 +1,21 @@
 ---
 title: DossierFacile
-mission: Remettre la confiance au centre de la relation entre propriétaires et locataires
-owner: Ministère de la Cohésion des territoires / Ministère de la Transition écologique
+mission: Remettre la confiance au centre de la relation entre propriétaires et
+  locataires
 sponsors:
-    - name: Direction générale de l'Aménagement, du Logement et de la Nature / Direction de l'habitat, de l'urbanisme et des paysages
-      acronym: DGALN / DHUP
-      domaine_ministeriel: environnement
-      type: administration-centrale
+  - /organisations/dgaln
+  - /organisations/dhup
 incubator: mtes
+link: https://www.dossierfacile.fr/?utm_source=betagouv&utm_medium=referral&utm_campaign=fiche_betagouv
+repository: https://github.com/mtes-mct/locatio
+contact: contact@dossierfacile.fr
+dashlord_url: https://dashlord.incubateur.net/url/dossierfacile-fr/
+analyse_risques: true
+accessibility_status: non conforme
+usertypes:
+  - particulier
+stats_url: https://www.dossierfacile.fr/stats
+stats: true
 phases:
   - name: investigation
     start: 2018-01-01
@@ -15,11 +23,6 @@ phases:
     start: 2018-01-01
   - name: acceleration
     start: 2018-01-01
-link: https://www.dossierfacile.fr/?utm_source=betagouv
-repository: https://github.com/mtes-mct/locatio
-stats: true
-stats_url: https://www.dossierfacile.fr/stats
-contact: contact@dossierfacile.fr
 ---
 ## Locatio devient DossierFacile.fr !
 

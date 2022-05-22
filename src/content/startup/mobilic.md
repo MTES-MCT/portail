@@ -1,7 +1,8 @@
 ---
 title: Mobilic
 mission: Simplifier le suivi et le respect du temps de travail des travailleurs mobiles
-owner: Ministère de la Transition écologique, chargé des transports
+sponsors:
+    - /organisations/mtes
 incubator: mtes
 phases:
   - name: investigation
@@ -13,6 +14,10 @@ repository: https://github.com/MTES-MCT/mobilic
 stats: true
 stats_url: https://mobilic.beta.gouv.fr/stats
 contact: gaspard.granger@developpement-durable.gouv.fr
+usertypes:
+  - entreprise
+dashlord_url: https://dashlord.incubateur.net/url/mobilic-beta-gouv-fr/
+accessibility_status: non conforme
 
 ---
 

@@ -1,7 +1,8 @@
 ---
 title: Jaden Gwadloup
 mission: Favoriser le développement de jardins partagés en Guadeloupe
-owner: DEAL Guadeloupe
+sponsors:
+  - /organisations/mtes
 incubator: mtes
 contact: meagann.boulassy@beta.gouv.fr
 phases:
@@ -10,6 +11,8 @@ phases:
     end: 2021-07-07
   - name: construction
     start: 2021-11-08
+usertypes:
+  - particulier
 ---
 ## Contexte 
 
